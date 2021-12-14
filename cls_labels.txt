@@ -1,9 +1,0 @@
-athlete,artist,actor,politician,leader,businessman,royal
-country,city,continent
-brand,software,airplane,food,game,vehicle
-federation,institution,sports team,political party,education,company,government,army,religion,sports league
-mall,school,hospital,airport
-residence,body of water,island,mountain,park
-movie,music,painting,broadcast
-war,disaster,election,sporting events,festival
-language,law,award,disease,currency
