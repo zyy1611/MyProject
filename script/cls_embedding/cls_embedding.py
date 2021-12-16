@@ -18,7 +18,7 @@ with open('./glove.6B.300d.txt', 'r', encoding='utf—8') as fw:  # 以gbk编码
         vector = np.asarray(values[1:], "float32")
         embeddings_dict[word] = vector
     for obj in cls:
-        zero = np.zeros((1, 300))
+        zero = np.zeros(300,)
         if obj not in embeddings_dict:
             for one in obj.split(" "):
                 zero = zero + embeddings_dict[one]
