@@ -32,13 +32,13 @@ def run(que):
             print(url)
             res = requests.get(url, headers=headers, proxies=proxies)
             soup = BeautifulSoup(res.content, "html.parser", from_encoding='gb18030')
-            met = soup.find('meta', property="og:description")
-            match = pattern.findall(str(met))
+            print(soup)
+            content = soup.find('meta', property="og:description")['content']
+            print(content)
             global des_txt
-            des_txt[id] = match
+            des_txt[id] = content
             print("---->")
-            for obj in des_txt:
-                print(obj, des_txt[obj])
+            print(len(des_txt))
             time.sleep(2)
             cnt = cnt + 1
             print("完成第 %s 个" % (cnt))
@@ -54,18 +54,30 @@ def prepare(result):
         t = threading.Thread(target=run, args=(queue,))
         t.start()
         t.join()
-    with open("./all_cls_relation.json", 'w', encoding='utf-8') as fr:
+    with open("./extra_des.json", 'w', encoding='utf-8') as fr:
         global des_txt
         json.dump(des_txt, fp=fr, ensure_ascii=False, indent=4, sort_keys=False)
 
 
 if __name__ == "__main__":
+    done_ids = []
+    with open("./extra_des.json", 'r', encoding='utf-8') as fr:
+        json_des = json.load(fr)
+        for obj in json_des:
+            done_ids.append(obj)
+    fr.close()
+    des_txt = json_des
+    cnt=1
     with open("./fr_en_extra.json", 'r', encoding='utf8') as fr:
         url = {}
         json_data = json.load(fr)
         for obj in json_data:
+            if obj in done_ids: continue
             if json_data[obj].split("//")[1].find("fr.") != -1:
                 continue
-            url[int(obj)] = (json_data[obj])
+            url[int(obj)] = json_data[obj]
+            cnt = cnt +1
+            if cnt==101:
+                break
     prepare(url)
     print(des_txt)
