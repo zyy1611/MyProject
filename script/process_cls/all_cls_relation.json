@@ -2196,2190 +2196,1195 @@
             "score": -0.3
         }
     ],
-    "artist": [
-        {
-            "word": "art",
-            "score": 9.338768390541102,
-            "from": "cn5,ol,w2v,swiki"
-        },
-        {
-            "word": "painter",
-            "score": 8.889561694625854,
-            "from": "cn5,ol,w2v,wn"
-        },
-        {
-            "word": "illustrator",
-            "score": 8.134780044139239,
-            "from": "cn5,ol,w2v,wn"
-        },
-        {
-            "word": "musician",
-            "score": 4.541626005224846,
-            "from": "ol,w2v,wn"
-        },
-        {
-            "word": "artwork",
-            "score": 4.444525558839613,
-            "from": "cn5,ol,w2v"
-        },
-        {
-            "word": "sculptor",
-            "score": 4.369601032467632,
-            "from": "ol,w2v,wn"
-        },
-        {
-            "word": "photographer",
-            "score": 4.288893505069873,
-            "from": "ol,w2v,wn"
-        },
-        {
-            "word": "sculpture",
-            "score": 3.7762681267678992,
-            "from": "ol,w2v,swiki"
-        },
-        {
-            "word": "decorator",
-            "score": 2.6863544990091768,
-            "from": "cn5,wn"
-        },
-        {
-            "word": "visual art",
-            "score": 2.654087592752809,
-            "from": "cn5,wiki"
-        },
-        {
-            "word": "artistic",
-            "score": 2.527886607390922,
-            "from": "cn5,w2v"
-        },
-        {
-            "word": "kitsch",
-            "score": 2.3852866558485992,
-            "from": "cn5,wiki"
-        },
-        {
-            "word": "painting",
-            "score": 2.321759812869706,
-            "from": "w2v,swiki"
-        },
-        {
-            "word": "artisan",
-            "score": 2.2457975576219638,
-            "from": "cn5,wiki"
-        },
-        {
-            "word": "portrait",
-            "score": 2.173144212373493,
-            "from": "cn5,w2v"
-        },
-        {
-            "word": "aesthetic",
-            "score": 2.0593524931875304,
-            "from": "cn5,wiki"
-        },
-        {
-            "word": "creative person",
-            "score": 1.9012461538461538,
-            "from": "ol,wn"
-        },
-        {
-            "word": "miniaturist",
-            "score": 1.8765573529966664,
-            "from": "cn5,ol"
-        },
-        {
-            "word": "portraitist",
-            "score": 1.872822170220947,
-            "from": "cn5,ol"
-        },
-        {
-            "word": "printmaker",
-            "score": 1.841076923076923,
-            "from": "ol,wn"
-        },
-        {
-            "word": "carver",
-            "score": 1.8405692307692307,
-            "from": "ol,wn"
-        },
-        {
-            "word": "expressionist",
-            "score": 1.8403384615384615,
-            "from": "ol,wn"
-        },
-        {
-            "word": "surrealist",
-            "score": 1.8402461538461536,
-            "from": "ol,wn"
-        },
-        {
-            "word": "portraiture",
-            "score": 1.8099299074601736,
-            "from": "cn5,ol"
-        },
-        {
-            "word": "encaustic",
-            "score": 1.7801105373860842,
-            "from": "cn5,ol"
-        },
-        {
-            "word": "watercolorist",
-            "score": 1.7723300149977073,
-            "from": "cn5,ol"
-        },
-        {
-            "word": "composer",
-            "score": 1.6125433581758002,
-            "from": "ol,w2v"
-        },
-        {
-            "word": "filmmaker",
-            "score": 1.59471670895008,
-            "from": "ol,w2v"
-        },
-        {
-            "word": "songwriter",
-            "score": 1.5877639411234443,
-            "from": "ol,w2v"
-        },
-        {
-            "word": "abstractionist",
-            "score": 1.5863818949578807,
-            "from": "cn5,ol"
-        },
-        {
-            "word": "singer",
-            "score": 1.5767062616369658,
-            "from": "ol,w2v"
-        },
-        {
-            "word": "jean arp",
-            "score": 1.5404923076923076,
-            "from": "ol,wn"
-        },
-        {
-            "word": "jasper johns",
-            "score": 1.539676923076923,
-            "from": "ol,wn"
-        },
+    "musical": [
         {
             "word": "music",
-            "score": 1.532174907571774,
-            "from": "w2v,swiki"
+            "score": 11.127585912820747,
+            "from": "ol,w2v,wiki,swiki"
         },
         {
-            "word": "pianist",
-            "score": 1.5177388446532585,
-            "from": "ol,w2v"
+            "word": "singing",
+            "score": 9.306889837416453,
+            "from": "ol,w2v,wn,reddit-slashes"
         },
         {
-            "word": "designer",
-            "score": 1.4959373157389844,
-            "from": "ol,w2v"
+            "word": "lyrical",
+            "score": 9.169981521146298,
+            "from": "ol,w2v,wn,reddit-slashes"
         },
         {
-            "word": "photography",
-            "score": 1.4694125535360274,
-            "from": "w2v,swiki"
+            "word": "movie",
+            "score": 4.311092993339534,
+            "from": "w2v,wn,reddit-slashes"
         },
         {
-            "word": "dancer",
-            "score": 1.4663365723748338,
-            "from": "ol,w2v"
-        },
-        {
-            "word": "playwright",
-            "score": 1.4522111575620114,
-            "from": "ol,w2v"
-        },
-        {
-            "word": "poet",
-            "score": 1.4490536765606215,
-            "from": "ol,w2v"
-        },
-        {
-            "word": "vocalist",
-            "score": 1.4225970156688936,
-            "from": "ol,w2v"
-        },
-        {
-            "word": "choreographer",
-            "score": 1.3737099395411791,
-            "from": "ol,w2v"
-        },
-        {
-            "word": "paintings",
-            "score": 1.3691939287728654,
-            "from": "ol,w2v"
-        },
-        {
-            "word": "art gallery",
-            "score": 1.2208000009359254,
-            "from": "cn5,ol"
-        },
-        {
-            "word": "arts",
-            "from": "wiki",
-            "score": 0.8
-        },
-        {
-            "word": "speech",
-            "from": "wiki",
-            "score": 0.7696969696969698
-        },
-        {
-            "word": "artistry",
-            "score": 0.7635836124967292,
-            "from": "cn5"
-        },
-        {
-            "word": "repaint",
-            "score": 0.758954889066068,
-            "from": "cn5"
-        },
-        {
-            "word": "artistically",
-            "score": 0.7571305215364326,
-            "from": "cn5"
-        },
-        {
-            "word": "fresco",
-            "score": 0.7487141791376204,
-            "from": "cn5"
-        },
-        {
-            "word": "triptych",
-            "score": 0.7465109595140729,
-            "from": "cn5"
-        },
-        {
-            "word": "glassblower",
-            "score": 0.7408,
-            "from": "ol,wiki"
-        },
-        {
-            "word": "discourse",
-            "from": "wiki",
-            "score": 0.7393939393939395
-        },
-        {
-            "word": "distemper",
-            "score": 0.7345008360292669,
-            "from": "cn5"
-        },
-        {
-            "word": "arty",
-            "score": 0.7329897435280965,
-            "from": "cn5"
-        },
-        {
-            "word": "drawing",
-            "from": "swiki",
-            "score": 0.7230769230769232
-        },
-        {
-            "word": "paint",
-            "score": 0.7219644529247307,
-            "from": "cn5"
-        },
-        {
-            "word": "gouache",
-            "score": 0.7165055334949559,
-            "from": "cn5"
-        },
-        {
-            "word": "seascape",
-            "score": 0.7104616621112667,
-            "from": "cn5"
-        },
-        {
-            "word": "watercolour",
-            "score": 0.7096092685758728,
-            "from": "cn5"
-        },
-        {
-            "word": "acrylic",
-            "score": 0.7095919015146819,
-            "from": "cn5"
-        },
-        {
-            "word": "symbolist",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "modernist",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "minimalist",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "stylist",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "master",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "hirschfeld",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "maestro",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "etcher",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "indiana",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "drawer",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "draftsman",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "romanticist",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "constructivist",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "classicist",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "tiffany",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "classic",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "romantic",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "johns",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "lear",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "duchamp",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "audubon",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "creator",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "arp",
-            "score": 0.7,
-            "from": "wn"
-        },
-        {
-            "word": "painterly",
-            "score": 0.696468215827172,
-            "from": "cn5"
-        },
-        {
-            "word": "watercolor",
-            "score": 0.6933805084988276,
-            "from": "cn5"
-        },
-        {
-            "word": "artmaker",
-            "score": 0.6721718315524651,
-            "from": "cn5"
-        },
-        {
-            "word": "artfag",
-            "score": 0.670815305408948,
-            "from": "cn5"
-        },
-        {
-            "word": "dauber",
-            "score": 0.6706106036871993,
-            "from": "cn5"
-        },
-        {
-            "word": "latex",
-            "score": 0.6690125114245382,
-            "from": "cn5"
-        },
-        {
-            "word": "pictorial",
-            "score": 0.6655151485220838,
-            "from": "cn5"
-        },
-        {
-            "word": "picturesque",
-            "score": 0.6636309282690995,
-            "from": "cn5"
-        },
-        {
-            "word": "artsy",
-            "score": 0.663233169791592,
-            "from": "cn5"
-        },
-        {
-            "word": "longueur",
-            "score": 0.6628662395529199,
-            "from": "cn5"
-        },
-        {
-            "word": "antiart",
-            "score": 0.6612969020488831,
-            "from": "cn5"
-        },
-        {
-            "word": "artfuck",
-            "score": 0.6590009111175391,
-            "from": "cn5"
-        },
-        {
-            "word": "painture",
-            "score": 0.6578340526588803,
-            "from": "cn5"
-        },
-        {
-            "word": "paleoart",
-            "score": 0.6560957799173232,
-            "from": "cn5"
-        },
-        {
-            "word": "decoupage",
-            "score": 0.6555644323111379,
-            "from": "cn5"
-        },
-        {
-            "word": "mural",
-            "score": 0.6551150525016893,
-            "from": "cn5"
-        },
-        {
-            "word": "artfest",
-            "score": 0.6537274144099449,
-            "from": "cn5"
-        },
-        {
-            "word": "artsploitation",
-            "score": 0.6523536380250189,
-            "from": "cn5"
-        },
-        {
-            "word": "muse",
-            "from": "wiki",
-            "score": 0.6484848484848484
-        },
-        {
-            "word": "fard",
-            "score": 0.6475976488357489,
-            "from": "cn5"
-        },
-        {
-            "word": "artless",
-            "score": 0.6439628799415056,
-            "from": "cn5"
-        },
-        {
-            "word": "montage",
-            "score": 0.6386090055393472,
-            "from": "cn5"
-        },
-        {
-            "word": "artlike",
-            "score": 0.6356825331814754,
-            "from": "cn5"
-        },
-        {
-            "word": "artly",
-            "score": 0.6350716878716057,
-            "from": "cn5"
-        },
-        {
-            "word": "puppetry",
-            "score": 0.6340830152171195,
-            "from": "cn5"
-        },
-        {
-            "word": "paintbrush",
-            "score": 0.630955284726834,
-            "from": "cn5"
-        },
-        {
-            "word": "homiletics",
-            "score": 0.6279905499685251,
-            "from": "cn5"
-        },
-        {
-            "word": "stipple",
-            "score": 0.6253305201137932,
-            "from": "cn5"
-        },
-        {
-            "word": "unpaint",
-            "score": 0.6225258734720137,
-            "from": "cn5"
-        },
-        {
-            "word": "taxidermy",
-            "score": 0.621147889472969,
-            "from": "cn5"
-        },
-        {
-            "word": "paintless",
-            "score": 0.6201715780406404,
-            "from": "cn5"
-        },
-        {
-            "word": "electropainted",
-            "score": 0.6200088173729371,
-            "from": "cn5"
-        },
-        {
-            "word": "electropainting",
-            "score": 0.6200088173729371,
-            "from": "cn5"
-        },
-        {
-            "word": "paintathon",
-            "score": 0.6195429029573728,
-            "from": "cn5"
-        },
-        {
-            "word": "impasto",
-            "score": 0.6182419396077757,
-            "from": "cn5"
-        },
-        {
-            "word": "portray",
-            "score": 0.6167655477149052,
-            "from": "cn5"
-        },
-        {
-            "word": "intermedia",
-            "score": 0.6167636427064704,
-            "from": "cn5"
-        },
-        {
-            "word": "impaint",
-            "score": 0.6167189739454974,
-            "from": "cn5"
-        },
-        {
-            "word": "artmobile",
-            "score": 0.6155078656841136,
-            "from": "cn5"
-        },
-        {
-            "word": "pictorialism",
-            "score": 0.6113971146536611,
-            "from": "cn5"
-        },
-        {
-            "word": "artists",
-            "score": 0.6106092402735922,
-            "from": "w2v"
-        },
-        {
-            "word": "outpaint",
-            "score": 0.6091076419357727,
-            "from": "cn5"
-        },
-        {
-            "word": "picture",
-            "score": 0.6070571042118043,
-            "from": "cn5"
-        },
-        {
-            "word": "iconography",
-            "score": 0.6056404826862178,
-            "from": "cn5"
-        },
-        {
-            "word": "tempera",
-            "score": 0.6031419582618607,
-            "from": "cn5"
-        },
-        {
-            "word": "printmaking",
-            "score": 0.601274241944229,
-            "from": "cn5"
-        },
-        {
-            "word": "semigloss",
-            "score": 0.6008156610907677,
-            "from": "cn5"
-        },
-        {
-            "word": "paintinglike",
-            "score": 0.6005930106690486,
-            "from": "cn5"
-        },
-        {
-            "word": "lensman",
-            "score": 0.6,
-            "from": "wn"
-        },
-        {
-            "word": "ornamentalist",
-            "score": 0.6,
-            "from": "wn"
-        },
-        {
-            "word": "sculpturer",
-            "score": 0.6,
-            "from": "wn"
-        },
-        {
-            "word": "pyrographer",
-            "score": 0.6,
-            "from": "wn"
-        },
-        {
-            "word": "pre-raphaelite",
-            "score": 0.6,
-            "from": "wn"
-        },
-        {
-            "word": "artgoing",
-            "score": 0.5978100243003518,
-            "from": "cn5"
-        },
-        {
-            "word": "glyptography",
-            "score": 0.591579021062255,
-            "from": "cn5"
-        },
-        {
-            "word": "monochromy",
-            "score": 0.5866746361351852,
-            "from": "cn5"
-        },
-        {
-            "word": "topiary",
-            "score": 0.5865753687976174,
-            "from": "cn5"
-        },
-        {
-            "word": "acclaimed",
-            "score": 0.5837641697684967,
-            "from": "w2v"
-        },
-        {
-            "word": "paintable",
-            "score": 0.5814194363330157,
-            "from": "cn5"
-        },
-        {
-            "word": "canvas",
-            "score": 0.5798818449652909,
-            "from": "cn5"
-        },
-        {
-            "word": "miniate",
-            "score": 0.5797290928950621,
-            "from": "cn5"
-        },
-        {
-            "word": "stippler",
-            "score": 0.5785742553430254,
-            "from": "cn5"
-        },
-        {
-            "word": "hyperrealism",
-            "score": 0.5749589836712504,
-            "from": "cn5"
-        },
-        {
-            "word": "depiction",
-            "score": 0.5741653027282103,
-            "from": "cn5"
-        },
-        {
-            "word": "cyberart",
-            "score": 0.5728110535707348,
-            "from": "cn5"
-        },
-        {
-            "word": "diptych",
-            "score": 0.5714829972827689,
-            "from": "cn5"
-        },
-        {
-            "word": "graphic",
-            "score": 0.5669353965665711,
-            "from": "cn5"
-        },
-        {
-            "word": "museum",
-            "score": 0.5634436200067268,
-            "from": "cn5"
-        },
-        {
-            "word": "musical",
-            "score": 0.5626506294102189,
-            "from": "w2v"
-        },
-        {
-            "word": "amate",
-            "score": 0.5587421094334046,
-            "from": "cn5"
-        },
-        {
-            "word": "project",
-            "from": "wiki",
-            "score": 0.5575757575757576
-        },
-        {
-            "word": "expressionism",
-            "score": 0.5574073639396369,
-            "from": "cn5"
-        },
-        {
-            "word": "artistdom",
-            "score": 0.5556975290297496,
-            "from": "cn5"
-        },
-        {
-            "word": "minstrelsy",
-            "score": 0.5536231616948968,
-            "from": "cn5"
-        },
-        {
-            "word": "tanka",
-            "score": 0.5535854092001613,
-            "from": "cn5"
-        },
-        {
-            "word": "contemporary",
-            "score": 0.5501206618763359,
-            "from": "w2v"
-        },
-        {
-            "word": "arthur",
-            "score": 0.5495897472083353,
-            "from": "cn5"
-        },
-        {
-            "word": "airbrush",
-            "score": 0.5489546484855853,
-            "from": "cn5"
-        },
-        {
-            "word": "aesthete",
-            "score": 0.5445892426342157,
-            "from": "cn5"
-        },
-        {
-            "word": "picturer",
-            "score": 0.543862723812271,
-            "from": "cn5"
-        },
-        {
-            "word": "diorama",
-            "score": 0.5435514456248147,
-            "from": "cn5"
-        },
-        {
-            "word": "collaborated",
-            "score": 0.5422433660402302,
-            "from": "w2v"
-        },
-        {
-            "word": "easel",
-            "score": 0.5380028200854396,
-            "from": "cn5"
-        },
-        {
-            "word": "paintmaking",
-            "score": 0.5376701337957889,
-            "from": "cn5"
-        },
-        {
-            "word": "pastiche",
-            "score": 0.535302448286338,
-            "from": "cn5"
-        },
-        {
-            "word": "film",
-            "score": 0.5352987394647093,
-            "from": "w2v"
-        },
-        {
-            "word": "illustrate",
-            "score": 0.5344891901452598,
-            "from": "cn5"
-        },
-        {
-            "word": "pop",
-            "score": 0.5331030487789105,
-            "from": "w2v"
-        },
-        {
-            "word": "works",
-            "score": 0.5303199156572198,
-            "from": "w2v"
-        },
-        {
-            "word": "famous",
-            "score": 0.5283350854677089,
-            "from": "w2v"
-        },
-        {
-            "word": "inspired",
-            "score": 0.527524639925799,
-            "from": "w2v"
-        },
-        {
-            "word": "academy",
-            "from": "wiki",
-            "score": 0.5272727272727273
-        },
-        {
-            "word": "writer",
-            "score": 0.5241350775676368,
-            "from": "w2v"
-        },
-        {
-            "word": "artspeak",
-            "score": 0.5231632158300289,
-            "from": "cn5"
-        },
-        {
-            "word": "folk",
-            "score": 0.522662143403451,
-            "from": "w2v"
-        },
-        {
-            "word": "performer",
-            "score": 0.5220978498579473,
-            "from": "w2v"
-        },
-        {
-            "word": "nonrepresentational",
-            "score": 0.5217411918589191,
-            "from": "cn5"
-        },
-        {
-            "word": "antisagging",
-            "score": 0.5202826855824957,
-            "from": "cn5"
-        },
-        {
-            "word": "sgraffito",
-            "score": 0.5179009772524331,
-            "from": "cn5"
-        },
-        {
-            "word": "renowned",
-            "score": 0.5175584565601018,
-            "from": "w2v"
-        },
-        {
-            "word": "studio",
-            "score": 0.5154761954766576,
-            "from": "w2v"
-        },
-        {
-            "word": "author",
-            "score": 0.5145041545719427,
-            "from": "w2v"
-        },
-        {
-            "word": "telescopy",
-            "score": 0.512470158406585,
-            "from": "cn5"
-        },
-        {
-            "word": "actor",
-            "score": 0.5112327409516375,
-            "from": "w2v"
-        },
-        {
-            "word": "screenwriter",
-            "score": 0.5111260190803157,
-            "from": "w2v"
-        },
-        {
-            "word": "featuring",
-            "score": 0.5105168809590387,
-            "from": "w2v"
-        },
-        {
-            "word": "recording",
-            "score": 0.5082650151210495,
-            "from": "w2v"
-        },
-        {
-            "word": "inspiration",
-            "score": 0.5080748435029916,
-            "from": "w2v"
-        },
-        {
-            "word": "featured",
-            "score": 0.5070217111830986,
-            "from": "w2v"
-        },
-        {
-            "word": "musicians",
-            "score": 0.5064569258357335,
-            "from": "w2v"
-        },
-        {
-            "word": "marouflage",
-            "score": 0.5041004186621184,
-            "from": "cn5"
-        },
-        {
-            "word": "duo",
-            "score": 0.502017220925963,
-            "from": "w2v"
-        },
-        {
-            "word": "song",
-            "score": 0.5004503585137939,
-            "from": "w2v"
-        },
-        {
-            "word": "album",
-            "score": 0.4988420440834807,
-            "from": "w2v"
-        },
-        {
-            "word": "painty",
-            "score": 0.4940878075020386,
-            "from": "cn5"
+            "word": "band",
+            "score": 4.229413384549309,
+            "from": "ol,w2v,reddit-slashes"
         },
         {
             "word": "dance",
-            "score": 0.4936222697660202,
-            "from": "w2v"
+            "score": 4.131942901616823,
+            "from": "w2v,swiki,reddit-slashes"
         },
         {
-            "word": "鈥檚",
-            "score": 0.4928299076820083,
-            "from": "w2v"
+            "word": "artistic",
+            "score": 4.000209274638068,
+            "from": "ol,w2v,reddit-slashes"
+        },
+        {
+            "word": "melodic",
+            "score": 3.4533538461538464,
+            "from": "ol,wn"
+        },
+        {
+            "word": "melodious",
+            "score": 3.416846153846154,
+            "from": "ol,wn"
+        },
+        {
+            "word": "philharmonic",
+            "score": 3.0705692307692307,
+            "from": "ol,wn"
+        },
+        {
+            "word": "musical theater",
+            "score": 3.0402461538461543,
+            "from": "ol,wn"
+        },
+        {
+            "word": "musical comedy",
+            "score": 3.024938461538462,
+            "from": "ol,wn"
+        },
+        {
+            "word": "cantabile",
+            "score": 3.009723076923077,
+            "from": "ol,wn"
+        },
+        {
+            "word": "mellifluous",
+            "score": 3.003923076923077,
+            "from": "ol,wn"
+        },
+        {
+            "word": "dulcet",
+            "score": 3.0016923076923074,
+            "from": "ol,wn"
+        },
+        {
+            "word": "songful",
+            "score": 2.953553846153846,
+            "from": "ol,wn"
+        },
+        {
+            "word": "singable",
+            "score": 2.950430769230769,
+            "from": "ol,wn"
+        },
+        {
+            "word": "honeyed",
+            "score": 2.9436923076923076,
+            "from": "ol,wn"
+        },
+        {
+            "word": "songlike",
+            "score": 2.9134307692307693,
+            "from": "ol,wn"
+        },
+        {
+            "word": "sweet",
+            "score": 2.907107692307692,
+            "from": "ol,wn"
+        },
+        {
+            "word": "liquid",
+            "score": 2.8396923076923075,
+            "from": "ol,wn"
+        },
+        {
+            "word": "chanted",
+            "score": 2.832707692307692,
+            "from": "ol,wn"
+        },
+        {
+            "word": "ariose",
+            "score": 2.724138461538461,
+            "from": "ol,wn"
+        },
+        {
+            "word": "canorous",
+            "score": 2.724138461538461,
+            "from": "ol,wn"
+        },
+        {
+            "word": "mellisonant",
+            "score": 2.724138461538461,
+            "from": "ol,wn"
+        },
+        {
+            "word": "film",
+            "score": 2.558816465053125,
+            "from": "w2v,wn"
+        },
+        {
+            "word": "opera",
+            "score": 2.5551692715753775,
+            "from": "ol,w2v"
+        },
+        {
+            "word": "songs",
+            "score": 2.5461860086406864,
+            "from": "ol,w2v"
+        },
+        {
+            "word": "musicians",
+            "score": 2.4997118117370505,
+            "from": "ol,w2v"
+        },
+        {
+            "word": "artist",
+            "score": 2.432947412666592,
+            "from": "ol,w2v"
+        },
+        {
+            "word": "concert",
+            "score": 2.413931461605091,
+            "from": "ol,w2v"
+        },
+        {
+            "word": "theatrical",
+            "score": 2.329966140610635,
+            "from": "ol,w2v"
+        },
+        {
+            "word": "orchestral",
+            "score": 2.2776095450656104,
+            "from": "ol,w2v"
+        },
+        {
+            "word": "classical",
+            "score": 2.252029257580352,
+            "from": "ol,w2v"
+        },
+        {
+            "word": "operatic",
+            "score": 2.236481187263161,
+            "from": "ol,w2v"
+        },
+        {
+            "word": "cinematic",
+            "score": 2.21654691499993,
+            "from": "ol,w2v"
+        },
+        {
+            "word": "songwriting",
+            "score": 2.213168816169309,
+            "from": "ol,w2v"
+        },
+        {
+            "word": "comedic",
+            "score": 2.1913069986594587,
+            "from": "ol,w2v"
+        },
+        {
+            "word": "symphonic",
+            "score": 2.1591539220231644,
+            "from": "ol,w2v"
+        },
+        {
+            "word": "choral",
+            "score": 2.149793891299187,
+            "from": "ol,w2v"
+        },
+        {
+            "word": "play",
+            "score": 1.7999999999999998,
+            "from": "wn,reddit-slashes"
+        },
+        {
+            "word": "musician",
+            "score": 1.7647230769230768,
+            "from": "ol,reddit-slashes"
+        },
+        {
+            "word": "drama",
+            "score": 1.7079598539007828,
+            "from": "w2v,swiki"
+        },
+        {
+            "word": "comedy",
+            "score": 1.580174013217845,
+            "from": "w2v,reddit-slashes"
+        },
+        {
+            "word": "pop",
+            "score": 1.5429597844277945,
+            "from": "w2v,reddit-slashes"
+        },
+        {
+            "word": "artists",
+            "score": 1.5341748084287552,
+            "from": "w2v,reddit-slashes"
+        },
+        {
+            "word": "performing",
+            "score": 1.5291520295161987,
+            "from": "w2v,reddit-slashes"
+        },
+        {
+            "word": "compositional",
+            "score": 1.5155846153846153,
+            "from": "ol,reddit-slashes"
+        },
+        {
+            "word": "sonic",
+            "score": 1.5153846153846153,
+            "from": "ol,reddit-slashes"
+        },
+        {
+            "word": "literary",
+            "score": 1.5151846153846154,
+            "from": "ol,reddit-slashes"
+        },
+        {
+            "word": "guitar",
+            "score": 1.4729047821456116,
+            "from": "w2v,reddit-slashes"
+        },
+        {
+            "word": "vocal",
+            "score": 1.4673477501724332,
+            "from": "w2v,reddit-slashes"
+        },
+        {
+            "word": "creative",
+            "score": 1.4634764710315213,
+            "from": "w2v,reddit-slashes"
+        },
+        {
+            "word": "performance",
+            "from": "swiki",
+            "score": 0.8
+        },
+        {
+            "word": "theater",
+            "from": "swiki",
+            "score": 0.7411764705882353
+        },
+        {
+            "word": "flick",
+            "score": 0.7,
+            "from": "wn"
+        },
+        {
+            "word": "pic",
+            "score": 0.7,
+            "from": "wn"
+        },
+        {
+            "word": "picture",
+            "score": 0.7,
+            "from": "wn"
+        },
+        {
+            "word": "musicality",
+            "score": 0.7,
+            "from": "wn"
         },
         {
             "word": "acting",
             "from": "swiki",
-            "score": 0.4923076923076923
+            "score": 0.6823529411764706
         },
         {
-            "word": "entertainer",
-            "score": 0.49003993169071636,
+            "word": "tonal",
+            "score": 0.6576153846153846,
+            "from": "ol"
+        },
+        {
+            "word": "musique",
+            "score": 0.641523076923077,
+            "from": "ol"
+        },
+        {
+            "word": "harmonious",
+            "score": 0.6107923076923077,
+            "from": "ol"
+        },
+        {
+            "word": "tracks",
+            "score": 0.6102,
+            "from": "ol"
+        },
+        {
+            "word": "brass",
+            "score": 0.6094076923076923,
+            "from": "ol"
+        },
+        {
+            "word": "notation",
+            "score": 0.6036769230769231,
+            "from": "ol"
+        },
+        {
+            "word": "ensemble",
+            "score": 0.603181214628286,
             "from": "w2v"
         },
         {
-            "word": "collection",
-            "score": 0.48982461452669446,
-            "from": "w2v"
+            "word": "musicalness",
+            "score": 0.6,
+            "from": "wn"
         },
         {
-            "word": "underpainting",
-            "score": 0.48949069714113247,
-            "from": "cn5"
-        },
-        {
-            "word": "documentary",
-            "score": 0.4886038634501377,
-            "from": "w2v"
-        },
-        {
-            "word": "screenplay",
-            "score": 0.4876086468672272,
-            "from": "w2v"
-        },
-        {
-            "word": "songs",
-            "score": 0.48732007057090776,
-            "from": "w2v"
-        },
-        {
-            "word": "depaint",
-            "score": 0.486690051273759,
-            "from": "cn5"
-        },
-        {
-            "word": "legendary",
-            "score": 0.4856857879089769,
+            "word": "instrumental",
+            "score": 0.5966238882623902,
             "from": "w2v"
         },
         {
             "word": "genre",
-            "score": 0.48476627272919937,
+            "score": 0.5946072121125928,
             "from": "w2v"
         },
         {
-            "word": "singers",
-            "score": 0.484500349755462,
+            "word": "curly",
+            "score": 0.5916846153846154,
+            "from": "ol"
+        },
+        {
+            "word": "contemporary",
+            "score": 0.5895986158051362,
             "from": "w2v"
         },
         {
-            "word": "collaborator",
-            "score": 0.48410893231029883,
+            "word": "repertoire",
+            "score": 0.5877251904804275,
             "from": "w2v"
         },
         {
-            "word": "actress",
-            "score": 0.4841058503763458,
+            "word": "compositions",
+            "score": 0.5845955210316723,
             "from": "w2v"
         },
         {
-            "word": "poetry",
-            "score": 0.4839165788942612,
+            "word": "acclaimed",
+            "score": 0.5838846554553816,
             "from": "w2v"
         },
         {
-            "word": "talaria",
-            "score": 0.4821345071081765,
-            "from": "cn5"
-        },
-        {
-            "word": "photomontage",
-            "score": 0.48157071202479507,
-            "from": "cn5"
-        },
-        {
-            "word": "pioneering",
-            "score": 0.4812132781253927,
+            "word": "folk",
+            "score": 0.5801453285296125,
             "from": "w2v"
         },
         {
-            "word": "pioneer",
-            "score": 0.480133199866787,
+            "word": "productions",
+            "score": 0.5795634140036144,
             "from": "w2v"
         },
         {
-            "word": "best",
-            "score": 0.47991730578607406,
+            "word": "performances",
+            "score": 0.5770815655842021,
             "from": "w2v"
         },
         {
-            "word": "collaboration",
-            "score": 0.47940801093121405,
-            "from": "w2v"
-        },
-        {
-            "word": "starred",
-            "score": 0.47921388643903634,
-            "from": "w2v"
-        },
-        {
-            "word": "jazz",
-            "score": 0.4791989115408318,
-            "from": "w2v"
-        },
-        {
-            "word": "indie",
-            "score": 0.477736131566382,
-            "from": "w2v"
-        },
-        {
-            "word": "comic",
-            "score": 0.4772491955610578,
+            "word": "films",
+            "score": 0.5744202666614303,
             "from": "w2v"
         },
         {
             "word": "soundtrack",
-            "score": 0.4768353719784721,
+            "score": 0.5727825205303181,
             "from": "w2v"
         },
         {
-            "word": "visual artist",
-            "score": 0.4767556479774267,
-            "from": "cn5"
-        },
-        {
-            "word": "films",
-            "score": 0.476504206581444,
+            "word": "inspired",
+            "score": 0.5725293111844041,
             "from": "w2v"
         },
         {
-            "word": "literary",
-            "score": 0.4758649627769777,
+            "word": "romantic",
+            "score": 0.5723907797238633,
             "from": "w2v"
         },
         {
-            "word": "award",
-            "score": 0.47523695609936245,
-            "from": "w2v"
-        },
-        {
-            "word": "written",
-            "score": 0.47468254164838,
-            "from": "w2v"
-        },
-        {
-            "word": "art union",
-            "score": 0.4744138900486506,
-            "from": "cn5"
-        },
-        {
-            "word": "composers",
-            "score": 0.47398163630290785,
-            "from": "w2v"
-        },
-        {
-            "word": "novelist",
-            "score": 0.47179961945313653,
-            "from": "w2v"
-        },
-        {
-            "word": "cinematographer",
-            "score": 0.4710818971696353,
-            "from": "w2v"
-        },
-        {
-            "word": "albums",
-            "score": 0.47062603835910954,
-            "from": "w2v"
-        },
-        {
-            "word": "at art show",
-            "score": 0.46994468008240836,
-            "from": "cn5"
-        },
-        {
-            "word": "biography",
-            "score": 0.46954527225819787,
-            "from": "w2v"
-        },
-        {
-            "word": "young",
-            "score": 0.4684670485512586,
-            "from": "w2v"
-        },
-        {
-            "word": "credited",
-            "score": 0.46844049906804414,
+            "word": "filmmaking",
+            "score": 0.5674872585695893,
             "from": "w2v"
         },
         {
             "word": "performed",
-            "score": 0.46821970891994885,
+            "score": 0.5672832196551952,
             "from": "w2v"
         },
         {
-            "word": "filmmakers",
-            "score": 0.4675237330147527,
+            "word": "inspiration",
+            "score": 0.5648748852478511,
             "from": "w2v"
         },
         {
-            "word": "singing",
-            "score": 0.4673015199712829,
+            "word": "theme",
+            "score": 0.5613903069493205,
             "from": "w2v"
         },
         {
-            "word": "theatrical",
-            "score": 0.46729428717481325,
+            "word": "jazz",
+            "score": 0.5593965892369138,
             "from": "w2v"
         },
         {
-            "word": "creativity",
-            "from": "wiki",
-            "score": 0.4666666666666666
-        },
-        {
-            "word": "delineative",
-            "score": 0.46655465269179575,
-            "from": "cn5"
-        },
-        {
-            "word": "notable",
-            "score": 0.4657353427119865,
+            "word": "featured",
+            "score": 0.5582539004025676,
             "from": "w2v"
         },
         {
-            "word": "icon",
-            "score": 0.46534225846694843,
-            "from": "w2v"
-        },
-        {
-            "word": "novel",
-            "score": 0.46523438761831165,
-            "from": "w2v"
-        },
-        {
-            "word": "performers",
-            "score": 0.46501359145010707,
-            "from": "w2v"
-        },
-        {
-            "word": "producer",
-            "score": 0.4645856787155798,
-            "from": "w2v"
-        },
-        {
-            "word": "letter sign",
-            "score": 0.46443965222503253,
-            "from": "cn5"
-        },
-        {
-            "word": "limn",
-            "score": 0.4623349590145841,
-            "from": "cn5"
-        },
-        {
-            "word": "demitint",
-            "score": 0.45916451232424016,
-            "from": "cn5"
-        },
-        {
-            "word": "staffage",
-            "score": 0.4590498578583396,
-            "from": "cn5"
-        },
-        {
-            "word": "ascii art",
-            "score": 0.4573453937888619,
-            "from": "cn5"
-        },
-        {
-            "word": "pseudophotograph",
-            "score": 0.45630568088157075,
-            "from": "cn5"
-        },
-        {
-            "word": "modern art",
-            "score": 0.4546632291763167,
-            "from": "cn5"
-        },
-        {
-            "word": "camaieu",
-            "score": 0.4480999101005615,
-            "from": "cn5"
-        },
-        {
-            "word": "make paint",
-            "score": 0.446272271218271,
-            "from": "cn5"
-        },
-        {
-            "word": "paint on canvas",
-            "score": 0.44614448773948984,
-            "from": "cn5"
-        },
-        {
-            "word": "pixel art",
-            "score": 0.445860940939848,
-            "from": "cn5"
-        },
-        {
-            "word": "make picture",
-            "score": 0.4411932307397784,
-            "from": "cn5"
-        },
-        {
-            "word": "plastic art",
-            "score": 0.4401256561080243,
-            "from": "cn5"
-        },
-        {
-            "word": "singer-songwriter",
-            "score": 0.43996227016104994,
-            "from": "w2v"
-        },
-        {
-            "word": "housepainting",
-            "score": 0.43788630979626386,
-            "from": "cn5"
-        },
-        {
-            "word": "recoat",
-            "score": 0.4374466405757095,
-            "from": "cn5"
-        },
-        {
-            "word": "innovation",
-            "from": "wiki",
-            "score": 0.43636363636363634
-        },
-        {
-            "word": "art show",
-            "score": 0.4362369677884848,
-            "from": "cn5"
-        },
-        {
-            "word": "get some paint",
-            "score": 0.43549093264155153,
-            "from": "cn5"
-        },
-        {
-            "word": "traditional art",
-            "score": 0.4351288507576541,
-            "from": "cn5"
-        },
-        {
-            "word": "award-winning",
-            "score": 0.4348981429743328,
-            "from": "w2v"
-        },
-        {
-            "word": "art and craft",
-            "score": 0.4325078741614355,
-            "from": "cn5"
-        },
-        {
-            "word": "learn to paint",
-            "score": 0.43158971433172294,
-            "from": "cn5"
-        },
-        {
-            "word": "topcoat",
-            "score": 0.4312649521066355,
-            "from": "cn5"
-        },
-        {
-            "word": "have brush",
-            "score": 0.43059234390999374,
-            "from": "cn5"
-        },
-        {
-            "word": "buy paint",
-            "score": 0.43058699404836626,
-            "from": "cn5"
-        },
-        {
-            "word": "photo realism",
-            "score": 0.4301530033216166,
-            "from": "cn5"
-        },
-        {
-            "word": "art deco",
-            "score": 0.4294681374759893,
-            "from": "cn5"
-        },
-        {
-            "word": "gallery open",
-            "score": 0.42756496256957705,
-            "from": "cn5"
-        },
-        {
-            "word": "paint out",
-            "score": 0.4266302338827422,
-            "from": "cn5"
-        },
-        {
-            "word": "objet d'art",
-            "score": 0.4249361426544796,
-            "from": "cn5"
-        },
-        {
-            "word": "graphic art",
-            "score": 0.42402808210130033,
-            "from": "cn5"
-        },
-        {
-            "word": "old master",
-            "score": 0.4238315589597315,
-            "from": "cn5"
-        },
-        {
-            "word": "work of art",
-            "score": 0.4227979393726243,
-            "from": "cn5"
-        },
-        {
-            "word": "acrylic paint",
-            "score": 0.4226330038656925,
-            "from": "cn5"
-        },
-        {
-            "word": "coat wall",
-            "score": 0.4223482010355329,
-            "from": "cn5"
-        },
-        {
-            "word": "body paint",
-            "score": 0.41947903844661455,
-            "from": "cn5"
-        },
-        {
-            "word": "pop art",
-            "score": 0.41867649090887543,
-            "from": "cn5"
-        },
-        {
-            "word": "well-known",
-            "score": 0.4179318130290369,
-            "from": "w2v"
-        },
-        {
-            "word": "new look",
-            "score": 0.416537834317593,
-            "from": "cn5"
-        },
-        {
-            "word": "fine art",
-            "score": 0.4156718833851801,
-            "from": "cn5"
-        },
-        {
-            "word": "dancing",
-            "from": "swiki",
-            "score": 0.4153846153846154
-        },
-        {
-            "word": "trompe l'oeil",
-            "score": 0.4116991884705022,
-            "from": "cn5"
-        },
-        {
-            "word": "avant-garde",
-            "score": 0.4115994785518369,
-            "from": "w2v"
-        },
-        {
-            "word": "spray paint",
-            "score": 0.40969879897258005,
-            "from": "cn5"
-        },
-        {
-            "word": "use brush",
-            "score": 0.4046687738318136,
-            "from": "cn5"
-        },
-        {
-            "word": "statue maker",
-            "score": 0.39999999999999997,
-            "from": "wn"
-        },
-        {
-            "word": "john james audubon",
-            "score": 0.39999999999999997,
-            "from": "wn"
-        },
-        {
-            "word": "edward lear",
-            "score": 0.39999999999999997,
-            "from": "wn"
-        },
-        {
-            "word": "graphic artist",
-            "score": 0.39999999999999997,
-            "from": "wn"
-        },
-        {
-            "word": "robert indiana",
-            "score": 0.39999999999999997,
-            "from": "wn"
-        },
-        {
-            "word": "al hirschfeld",
-            "score": 0.39999999999999997,
-            "from": "wn"
-        },
-        {
-            "word": "louis comfort tiffany",
-            "score": 0.39999999999999997,
-            "from": "wn"
-        },
-        {
-            "word": "hans arp",
-            "score": 0.39999999999999997,
-            "from": "wn"
-        },
-        {
-            "word": "marcel duchamp",
-            "score": 0.39999999999999997,
-            "from": "wn"
-        },
-        {
-            "word": "papier coll茅",
-            "score": 0.3984460368881398,
-            "from": "cn5"
-        },
-        {
-            "word": "home improvement",
-            "score": 0.3983401507045046,
-            "from": "cn5"
-        },
-        {
-            "word": "wall cover",
-            "score": 0.3976463496824863,
-            "from": "cn5"
-        },
-        {
-            "word": "become artist",
-            "score": 0.3962511255745916,
-            "from": "cn5"
-        },
-        {
-            "word": "paint brush",
-            "score": 0.3960912924165057,
-            "from": "cn5"
-        },
-        {
-            "word": "oil paint",
-            "score": 0.39582036168407925,
-            "from": "cn5"
-        },
-        {
-            "word": "pictorial convention",
-            "score": 0.3939140937270556,
-            "from": "cn5"
-        },
-        {
-            "word": "street art",
-            "score": 0.3931703074151736,
-            "from": "cn5"
-        },
-        {
-            "word": "museum wing",
-            "score": 0.392005989039562,
-            "from": "cn5"
-        },
-        {
-            "word": "express creativity",
-            "score": 0.38897534910618387,
-            "from": "cn5"
-        },
-        {
-            "word": "finger paint",
-            "score": 0.3851468710391795,
-            "from": "cn5"
-        },
-        {
-            "word": "paint picture",
-            "score": 0.38248086001732756,
-            "from": "cn5"
-        },
-        {
-            "word": "best-known",
-            "score": 0.3817735212850364,
-            "from": "w2v"
-        },
-        {
-            "word": "oxford english dictionary",
-            "from": "wiki",
-            "score": 0.37878787878787873
-        },
-        {
-            "word": "singer/songwriter",
-            "score": 0.378216078949449,
-            "from": "w2v"
-        },
-        {
-            "word": "co-written",
-            "score": 0.37418284991944994,
-            "from": "w2v"
-        },
-        {
-            "word": "paint wall",
-            "score": 0.36276563553872704,
-            "from": "cn5"
-        },
-        {
-            "word": "artsy craftsy",
-            "score": 0.3511131448452412,
-            "from": "cn5"
-        },
-        {
-            "word": "be artist",
-            "score": 0.35007240662819866,
-            "from": "cn5"
-        },
-        {
-            "word": "conecept design",
-            "score": 0.3486954186911689,
-            "from": "cn5"
-        },
-        {
-            "word": "oil color",
-            "score": 0.3411364446294876,
-            "from": "cn5"
-        },
-        {
-            "word": "at gallery open",
-            "score": 0.3403384742972853,
-            "from": "cn5"
-        },
-        {
-            "word": "writing",
-            "from": "swiki",
-            "score": 0.3384615384615384
-        },
-        {
-            "word": "performance art",
-            "score": 0.3275318027064807,
-            "from": "cn5"
-        },
-        {
-            "word": "art supply",
-            "score": 0.3233522010396939,
-            "from": "cn5"
-        },
-        {
-            "word": "create art",
-            "score": 0.3208982898289519,
-            "from": "cn5"
-        },
-        {
-            "word": "leon battista alberti",
-            "from": "wiki",
-            "score": 0.3181818181818182
-        },
-        {
-            "word": "still life",
-            "score": 0.3156385803833,
-            "from": "cn5"
-        },
-        {
-            "word": "life class",
-            "score": 0.31492673544526456,
-            "from": "cn5"
-        },
-        {
-            "word": "de re aedificatoria",
-            "from": "wiki",
-            "score": 0.2878787878787879
-        },
-        {
-            "word": "decorate room",
-            "score": 0.2856058694965225,
-            "from": "cn5"
-        },
-        {
-            "word": "on wall",
-            "score": 0.28384989289062484,
-            "from": "cn5"
-        },
-        {
-            "word": "acrylic resin",
-            "score": 0.2763574751388665,
-            "from": "cn5"
-        },
-        {
-            "word": "liberal art",
-            "score": 0.2733551273349462,
-            "from": "cn5"
-        },
-        {
-            "word": "coat of paint",
-            "score": 0.27210022482366575,
-            "from": "cn5"
-        },
-        {
-            "word": "graphical user interface",
-            "score": 0.2706595663271572,
-            "from": "cn5"
-        },
-        {
-            "word": "mask tape",
-            "score": 0.2698972489081855,
-            "from": "cn5"
-        },
-        {
-            "word": "magnum opus",
-            "score": 0.2655892242917464,
-            "from": "cn5"
-        },
-        {
-            "word": "water base paint",
-            "score": 0.26370234932642017,
-            "from": "cn5"
-        },
-        {
-            "word": "filmmaking",
-            "from": "swiki",
-            "score": 0.26153846153846155
-        },
-        {
-            "word": "paint by number",
-            "score": 0.26036456217814835,
-            "from": "cn5"
-        },
-        {
-            "word": "creative work",
-            "score": 0.2572823905875761,
-            "from": "cn5"
-        },
-        {
-            "word": "sign it",
-            "score": 0.24947873107516833,
-            "from": "cn5"
-        },
-        {
-            "word": "rag off",
-            "score": 0.2489070270544103,
-            "from": "cn5"
-        },
-        {
-            "word": "paint house",
-            "score": 0.24742390157158917,
-            "from": "cn5"
-        },
-        {
-            "word": "black art",
-            "score": 0.23611429265193512,
-            "from": "cn5"
-        },
-        {
-            "word": "religious icon",
-            "score": 0.23297918001989532,
-            "from": "cn5"
-        },
-        {
-            "word": "muralist",
-            "score": 0.22052307692307693,
+            "word": "musicales",
+            "score": 0.558023076923077,
             "from": "ol"
         },
         {
-            "word": "artiste",
-            "score": 0.22047692307692307,
-            "from": "ol"
-        },
-        {
-            "word": "animator",
-            "score": 0.2203923076923077,
-            "from": "ol"
-        },
-        {
-            "word": "potter",
-            "score": 0.22032307692307693,
-            "from": "ol"
-        },
-        {
-            "word": "cartoonist",
-            "score": 0.2202923076923077,
-            "from": "ol"
-        },
-        {
-            "word": "canvases",
-            "score": 0.22027692307692306,
+            "word": "ragtime",
+            "score": 0.5579461538461539,
             "from": "ol"
         },
         {
             "word": "instrumentalist",
-            "score": 0.2202,
+            "score": 0.5579153846153846,
             "from": "ol"
         },
         {
-            "word": "caricaturist",
-            "score": 0.2201846153846154,
+            "word": "choreographic",
+            "score": 0.5579076923076923,
             "from": "ol"
         },
         {
-            "word": "storyteller",
-            "score": 0.22014615384615385,
+            "word": "tuneful",
+            "score": 0.5579,
             "from": "ol"
         },
         {
-            "word": "luthier",
-            "score": 0.22013846153846153,
+            "word": "jazzy",
+            "score": 0.5578923076923077,
             "from": "ol"
         },
         {
-            "word": "craftsman",
-            "score": 0.22006923076923077,
+            "word": "improvisational",
+            "score": 0.5578846153846154,
             "from": "ol"
         },
         {
-            "word": "monotype",
-            "score": 0.22003846153846154,
+            "word": "soulful",
+            "score": 0.5578538461538461,
             "from": "ol"
         },
         {
-            "word": "impressionist",
-            "score": 0.21999230769230768,
+            "word": "electroacoustic",
+            "score": 0.5578461538461539,
             "from": "ol"
         },
         {
-            "word": "etchings",
-            "score": 0.21997692307692307,
+            "word": "bluesy",
+            "score": 0.5578384615384615,
             "from": "ol"
         },
         {
-            "word": "troubadour",
-            "score": 0.21995384615384617,
+            "word": "shakespearean",
+            "score": 0.5578307692307692,
             "from": "ol"
         },
         {
-            "word": "colorist",
-            "score": 0.21992307692307692,
+            "word": "virtuosic",
+            "score": 0.557823076923077,
             "from": "ol"
         },
         {
-            "word": "lithographer",
-            "score": 0.2199076923076923,
+            "word": "rockabilly",
+            "score": 0.5578,
             "from": "ol"
         },
         {
-            "word": "percussionist",
-            "score": 0.2199,
+            "word": "mariachi",
+            "score": 0.5577846153846154,
             "from": "ol"
         },
         {
-            "word": "songstress",
-            "score": 0.21988461538461537,
+            "word": "aural",
+            "score": 0.5577692307692308,
             "from": "ol"
         },
         {
-            "word": "rapper",
-            "score": 0.21986923076923076,
+            "word": "klezmer",
+            "score": 0.5577615384615384,
             "from": "ol"
         },
         {
-            "word": "banksy",
-            "score": 0.21982307692307693,
+            "word": "percussive",
+            "score": 0.5577538461538462,
             "from": "ol"
         },
         {
-            "word": "remixer",
-            "score": 0.2198153846153846,
+            "word": "carnatic",
+            "score": 0.5577153846153846,
             "from": "ol"
         },
         {
-            "word": "lyricist",
-            "score": 0.21980769230769232,
+            "word": "pentatonic",
+            "score": 0.5576846153846153,
             "from": "ol"
         },
         {
-            "word": "pottery",
-            "from": "wiki",
-            "score": 0.1333333333333333
-        },
-        {
-            "word": "ceramicist",
-            "score": 0.12051538461538461,
+            "word": "shakespearian",
+            "score": 0.5576692307692308,
             "from": "ol"
         },
         {
-            "word": "conceptualist",
-            "score": 0.12046923076923077,
+            "word": "burlesque",
+            "score": 0.5576384615384615,
             "from": "ol"
         },
         {
-            "word": "ceramist",
-            "score": 0.12045384615384616,
+            "word": "wagnerian",
+            "score": 0.5576307692307693,
             "from": "ol"
         },
         {
-            "word": "watercolourist",
-            "score": 0.12044615384615384,
+            "word": "flamenco",
+            "score": 0.5576230769230769,
             "from": "ol"
         },
         {
-            "word": "sculptress",
-            "score": 0.12038461538461537,
+            "word": "rhythmic",
+            "score": 0.5576153846153846,
             "from": "ol"
         },
         {
-            "word": "collagist",
-            "score": 0.12036923076923076,
+            "word": "musicological",
+            "score": 0.5576,
             "from": "ol"
         },
         {
-            "word": "metalsmith",
-            "score": 0.12034615384615385,
+            "word": "directorial",
+            "score": 0.5575769230769231,
             "from": "ol"
         },
         {
-            "word": "quilter",
-            "score": 0.12033846153846153,
+            "word": "eclectic",
+            "score": 0.5575692307692308,
             "from": "ol"
         },
         {
-            "word": "landscapist",
-            "score": 0.1203153846153846,
+            "word": "microtonal",
+            "score": 0.5575615384615384,
             "from": "ol"
         },
         {
-            "word": "postimpressionist",
-            "score": 0.12026153846153845,
+            "word": "reggae",
+            "score": 0.5575538461538462,
             "from": "ol"
         },
         {
-            "word": "craftswoman",
-            "score": 0.12025384615384616,
+            "word": "works",
+            "score": 0.5567830332977914,
+            "from": "w2v"
+        },
+        {
+            "word": "adaptation",
+            "score": 0.5565743278777413,
+            "from": "w2v"
+        },
+        {
+            "word": "genres",
+            "score": 0.554992107217167,
+            "from": "w2v"
+        },
+        {
+            "word": "comic",
+            "score": 0.5549738687153131,
+            "from": "w2v"
+        },
+        {
+            "word": "choreography",
+            "score": 0.5507141233745622,
+            "from": "w2v"
+        },
+        {
+            "word": "studio",
+            "score": 0.5497834438506485,
+            "from": "w2v"
+        },
+        {
+            "word": "recording",
+            "score": 0.5497488602621049,
+            "from": "w2v"
+        },
+        {
+            "word": "singers",
+            "score": 0.548632337985758,
+            "from": "w2v"
+        },
+        {
+            "word": "influences",
+            "score": 0.5460398014873357,
+            "from": "w2v"
+        },
+        {
+            "word": "melody",
+            "score": 0.545540900369924,
+            "from": "w2v"
+        },
+        {
+            "word": "improvisation",
+            "score": 0.5449761043237012,
+            "from": "w2v"
+        },
+        {
+            "word": "featuring",
+            "score": 0.5446508626601275,
+            "from": "w2v"
+        },
+        {
+            "word": "feature",
+            "score": 0.5439948153278937,
+            "from": "w2v"
+        },
+        {
+            "word": "poetry",
+            "score": 0.543087573708902,
+            "from": "w2v"
+        },
+        {
+            "word": "lyrics",
+            "score": 0.5425083588708158,
+            "from": "w2v"
+        },
+        {
+            "word": "performs",
+            "score": 0.5423317080647594,
+            "from": "w2v"
+        },
+        {
+            "word": "song",
+            "score": 0.5415941838126402,
+            "from": "w2v"
+        },
+        {
+            "word": "piano",
+            "score": 0.5415922395716101,
+            "from": "w2v"
+        },
+        {
+            "word": "musicals",
+            "score": 0.5406368255034004,
+            "from": "w2v"
+        },
+        {
+            "word": "performers",
+            "score": 0.5393020641667805,
+            "from": "w2v"
+        },
+        {
+            "word": "actors",
+            "score": 0.5383061775632082,
+            "from": "w2v"
+        },
+        {
+            "word": "tunes",
+            "score": 0.5368542298035145,
+            "from": "w2v"
+        },
+        {
+            "word": "composer",
+            "score": 0.5367051213703864,
+            "from": "w2v"
+        },
+        {
+            "word": "documentary",
+            "score": 0.5361443092301685,
+            "from": "w2v"
+        },
+        {
+            "word": "roles",
+            "score": 0.5352658872996686,
+            "from": "w2v"
+        },
+        {
+            "word": "lyric",
+            "score": 0.5337748030743398,
+            "from": "w2v"
+        },
+        {
+            "word": "ballet",
+            "score": 0.5336255477540613,
+            "from": "w2v"
+        },
+        {
+            "word": "repertory",
+            "score": 0.5334899469291251,
+            "from": "w2v"
+        },
+        {
+            "word": "collaboration",
+            "score": 0.5326510629496252,
+            "from": "w2v"
+        },
+        {
+            "word": "writing",
+            "score": 0.5321009940489725,
+            "from": "w2v"
+        },
+        {
+            "word": "composing",
+            "score": 0.5307524095986959,
+            "from": "w2v"
+        },
+        {
+            "word": "classics",
+            "score": 0.5291955049102091,
+            "from": "w2v"
+        },
+        {
+            "word": "solo",
+            "score": 0.5289329850415918,
+            "from": "w2v"
+        },
+        {
+            "word": "album",
+            "score": 0.528739904101552,
+            "from": "w2v"
+        },
+        {
+            "word": "composition",
+            "score": 0.5277986185642968,
+            "from": "w2v"
+        },
+        {
+            "word": "styles",
+            "score": 0.5265929501276612,
+            "from": "w2v"
+        },
+        {
+            "word": "revival",
+            "score": 0.52487250894104,
+            "from": "w2v"
+        },
+        {
+            "word": "style",
+            "score": 0.5247207061287882,
+            "from": "w2v"
+        },
+        {
+            "word": "storytelling",
+            "score": 0.5213539047222897,
+            "from": "w2v"
+        },
+        {
+            "word": "theatre",
+            "score": 0.5203403493291657,
+            "from": "w2v"
+        },
+        {
+            "word": "presents",
+            "score": 0.5203092102457069,
+            "from": "w2v"
+        },
+        {
+            "word": "themes",
+            "score": 0.5196630718782331,
+            "from": "w2v"
+        },
+        {
+            "word": "trio",
+            "score": 0.5194839594122248,
+            "from": "w2v"
+        },
+        {
+            "word": "adapted",
+            "score": 0.519122641518993,
+            "from": "w2v"
+        },
+        {
+            "word": "features",
+            "score": 0.5162855279313012,
+            "from": "w2v"
+        },
+        {
+            "word": "collaborations",
+            "score": 0.5162012747689599,
+            "from": "w2v"
+        },
+        {
+            "word": "best",
+            "score": 0.5157020003301266,
+            "from": "w2v"
+        },
+        {
+            "word": "art",
+            "score": 0.5156790147509571,
+            "from": "w2v"
+        },
+        {
+            "word": "influenced",
+            "score": 0.5156497603634614,
+            "from": "w2v"
+        },
+        {
+            "word": "lytic",
+            "score": 0.4794153846153847,
             "from": "ol"
         },
         {
-            "word": "drypoint",
-            "score": 0.12019230769230768,
+            "word": "nonmusical",
+            "score": 0.4580000000000001,
             "from": "ol"
         },
         {
-            "word": "craftsperson",
-            "score": 0.12017692307692307,
+            "word": "pianistic",
+            "score": 0.45795384615384616,
             "from": "ol"
         },
         {
-            "word": "crafter",
-            "score": 0.12015384615384614,
+            "word": "improvisatory",
+            "score": 0.4578692307692308,
             "from": "ol"
         },
         {
-            "word": "appreciator",
-            "score": 0.12013076923076924,
+            "word": "terpsichorean",
+            "score": 0.4578153846153846,
             "from": "ol"
         },
         {
-            "word": "scratchboard",
-            "score": 0.12009999999999998,
+            "word": "mozartean",
+            "score": 0.45780769230769236,
             "from": "ol"
         },
         {
-            "word": "shahn",
-            "score": 0.12008461538461537,
+            "word": "handelian",
+            "score": 0.4577769230769231,
             "from": "ol"
         },
         {
-            "word": "glasswork",
-            "score": 0.12006153846153847,
+            "word": "cantorial",
+            "score": 0.4577461538461539,
             "from": "ol"
         },
         {
-            "word": "dubuffet",
-            "score": 0.12003076923076922,
+            "word": "nonet",
+            "score": 0.45773846153846154,
             "from": "ol"
         },
         {
-            "word": "linocut",
-            "score": 0.12,
+            "word": "mozartian",
+            "score": 0.4577307692307693,
             "from": "ol"
         },
         {
-            "word": "kollwitz",
-            "score": 0.11996153846153845,
+            "word": "dramaturgical",
+            "score": 0.4577230769230769,
             "from": "ol"
         },
         {
-            "word": "nevelson",
-            "score": 0.11993846153846152,
+            "word": "treasurable",
+            "score": 0.4577,
             "from": "ol"
         },
         {
-            "word": "tunesmith",
-            "score": 0.11987692307692308,
+            "word": "melismatic",
+            "score": 0.4576769230769231,
             "from": "ol"
         },
         {
-            "word": "songsmith",
-            "score": 0.11986153846153846,
+            "word": "choralist",
+            "score": 0.4576538461538462,
             "from": "ol"
         },
         {
-            "word": "woodworker",
-            "score": 0.11984615384615385,
+            "word": "musicomania",
+            "score": 0.45758461538461537,
             "from": "ol"
         },
         {
-            "word": "high culture",
-            "from": "wiki",
-            "score": 0.10606060606060608
+            "word": "beethovenian",
+            "score": 0.4575461538461538,
+            "from": "ol"
         },
         {
-            "word": "goldsmith",
-            "from": "wiki",
-            "score": 0.10303030303030303
+            "word": "hummable",
+            "score": 0.45753846153846156,
+            "from": "ol"
         },
         {
-            "word": "new media art",
-            "from": "wiki",
-            "score": 0.0757575757575758
+            "word": "rhythmometer",
+            "score": 0.45751538461538466,
+            "from": "ol"
         },
         {
-            "word": "renaissance",
-            "from": "wiki",
-            "score": 0.04242424242424242
+            "word": "symphonize",
+            "score": 0.4575076923076923,
+            "from": "ol"
         },
         {
-            "word": "scientist",
+            "word": "instrumentist",
+            "score": 0.4575,
+            "from": "ol"
+        },
+        {
+            "word": "avant-garde",
+            "score": 0.4163682527748548,
+            "from": "w2v"
+        },
+        {
+            "word": "motion picture",
+            "score": 0.39999999999999997,
+            "from": "wn"
+        },
+        {
+            "word": "motion-picture show",
+            "score": 0.39999999999999997,
+            "from": "wn"
+        },
+        {
+            "word": "moving picture",
+            "score": 0.39999999999999997,
+            "from": "wn"
+        },
+        {
+            "word": "moving-picture show",
+            "score": 0.39999999999999997,
+            "from": "wn"
+        },
+        {
+            "word": "picture show",
+            "score": 0.39999999999999997,
+            "from": "wn"
+        },
+        {
+            "word": "set to music",
+            "score": 0.25770769230769236,
+            "from": "ol"
+        },
+        {
+            "word": "bass fiddle",
+            "score": 0.25766153846153844,
+            "from": "ol"
+        },
+        {
+            "word": "musical performance",
+            "score": 0.2575230769230769,
+            "from": "ol"
+        },
+        {
+            "word": "oklahoma!",
             "from": "swiki",
-            "score": 0.03076923076923077
+            "score": 0.22941176470588234
         },
         {
-            "word": "art history",
-            "from": "wiki",
-            "score": 0.015151515151515138
+            "word": "operetta",
+            "from": "swiki",
+            "score": 0.2117647058823529
         },
         {
-            "word": "technician",
-            "from": "wiki",
-            "score": 0.012121212121212116
+            "word": "les mis茅rables",
+            "from": "swiki",
+            "score": 0.20588235294117646
         },
         {
-            "word": "mathematician",
+            "word": "west side story",
+            "from": "swiki",
+            "score": 0.1470588235294118
+        },
+        {
+            "word": "the sound of music",
+            "from": "swiki",
+            "score": 0.08823529411764708
+        },
+        {
+            "word": "libretto",
+            "from": "swiki",
+            "score": 0.03529411764705881
+        },
+        {
+            "word": "rock",
+            "score": 0.004,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "broadway",
+            "score": 0.004,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "book",
+            "score": 0.004,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "political",
+            "score": 0.004,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "funny",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "city",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "bands",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "talkie",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "track",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "ocarina",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "chord",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "hearing",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "chorus",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "theory",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "disney",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "teacher",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "noise",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "rot",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "romance",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "entertainment",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "media",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "fish",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "visual",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "notable",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "aesthetic",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "useful",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "civ",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "clothing",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "horror",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "live",
+            "score": 0.002,
+            "from": "reddit-slashes"
+        },
+        {
+            "word": "satire",
             "from": "swiki",
             "score": 0
         },
         {
-            "word": "vaudeville",
-            "from": "wiki",
-            "score": 0
-        },
-        {
-            "word": "noun",
+            "word": "edwardian",
             "from": "swiki",
             "score": 0
         },
         {
-            "word": "pejorative",
-            "from": "wiki",
-            "score": 0
+            "word": "artsy",
+            "score": -0.098,
+            "from": "reddit-slashes"
         },
         {
-            "word": "art critic",
-            "from": "wiki",
-            "score": -0.015151515151515138
+            "word": "cheesier",
+            "score": -0.098,
+            "from": "reddit-slashes"
         },
         {
-            "word": "applied arts",
-            "from": "wiki",
-            "score": -0.04545454545454547
+            "word": "jacques offenbach",
+            "from": "swiki",
+            "score": -0.14705882352941174
         },
         {
-            "word": "decorative arts",
-            "from": "wiki",
-            "score": -0.07575757575757575
+            "word": "johann strauss ii",
+            "from": "swiki",
+            "score": -0.20588235294117646
         },
         {
-            "word": "portrait painter",
-            "score": -0.07956923076923075,
-            "from": "ol"
-        },
-        {
-            "word": "jazz musician",
-            "score": -0.07964615384615384,
-            "from": "ol"
-        },
-        {
-            "word": "abstract expressionist",
-            "score": -0.0797,
-            "from": "ol"
-        },
-        {
-            "word": "fashion designer",
-            "score": -0.07976153846153844,
-            "from": "ol"
-        },
-        {
-            "word": "visual arts",
-            "score": -0.07979230769230769,
-            "from": "ol"
-        },
-        {
-            "word": "edouard vuillard",
-            "score": -0.07988461538461539,
-            "from": "ol"
-        },
-        {
-            "word": "chaim soutine",
-            "score": -0.07990769230769229,
-            "from": "ol"
-        },
-        {
-            "word": "yousuf karsh",
-            "score": -0.07994615384615383,
-            "from": "ol"
-        },
-        {
-            "word": "abstract expressionism",
-            "score": -0.07995384615384615,
-            "from": "ol"
-        },
-        {
-            "word": "kazimir malevich",
-            "score": -0.07997692307692306,
-            "from": "ol"
-        },
-        {
-            "word": "interior designer",
-            "score": -0.07999230769230767,
-            "from": "ol"
-        },
-        {
-            "word": "jose clemente orozco",
-            "score": -0.0800153846153846,
-            "from": "ol"
-        },
-        {
-            "word": "maxfield parrish",
-            "score": -0.08005384615384614,
-            "from": "ol"
-        },
-        {
-            "word": "louise nevelson",
-            "score": -0.08006923076923075,
-            "from": "ol"
-        },
-        {
-            "word": "willem de kooning",
-            "score": -0.08008461538461537,
-            "from": "ol"
-        },
-        {
-            "word": "de kooning",
-            "score": -0.0801076923076923,
-            "from": "ol"
-        },
-        {
-            "word": "aristide maillol",
-            "score": -0.0802,
-            "from": "ol"
-        },
-        {
-            "word": "master craftsman",
-            "from": "wiki",
-            "score": -0.13636363636363635
-        },
-        {
-            "word": "applied art",
-            "from": "wiki",
-            "score": -0.3
-        },
-        {
-            "word": "music hall",
-            "from": "wiki",
-            "score": -0.3
-        },
-        {
-            "word": "fine arts",
-            "from": "wiki",
+            "word": "gilbert and sullivan",
+            "from": "swiki",
             "score": -0.3
         }
     ],

@@ -6,7 +6,8 @@ def delete_sub(text_obj):
     pos = [text_obj.find(" is "), text_obj.find(" was "), text_obj.find(" are "), text_obj.find(" were ")]
     for obj in pos:
         if obj > 0:
-            return text_obj[obj:]
+            return text_obj[:obj].strip()
+    return None
 
 
 class ReplaceSub(object):
@@ -29,10 +30,10 @@ class ReplaceSub(object):
                                        "description": text_obj}
             else:
                 self.result[ent_id] = {"ent_name": self.link_data[ent_id],
-                                       "description": self.link_data[ent_id] + del_sub}
+                                       "description": text_obj.replace(del_sub, self.link_data[ent_id])}
         print(len(self.result))
         try:
-            with open("../process_data/{}/comment_{}_description.json".format(self.dataset, self.comment_index), 'w',
+            with open("./{}/comment_{}_description.json".format(self.dataset, self.comment_index), 'w',
                       encoding='utf-8') as fw:
                 json.dump(self.result, fw, ensure_ascii=False, indent=4, sort_keys=False)
                 fw.close()
@@ -176,7 +177,7 @@ def generate_comment(ent_tab, dataset):
                 print(cnt)
                 result[th[0]] = {"ent_name": ent_tab[th[0]], "description": th[1]}
             else:
-                result[th[0]] = {"ent_name": ent_tab[th[0]], "description": ent_tab[th[0]] + del_sub}
+                result[th[0]] = {"ent_name": ent_tab[th[0]], "description": th[1].replace(del_sub, ent_tab[th[0]])}
     print(len(result))
     try:
         with open("./{}_en/comment_1_description.json".format(dataset), 'w',
@@ -187,9 +188,21 @@ def generate_comment(ent_tab, dataset):
         print("写入失败", e)
 
 
-if __name__ == "__main__":
-    replace_sub("fr_en", "2")  # 将数据集中英文版本的实体描述的主语换成对应的名字,并写入文件中
+def process_des(dataset):
+    replace_sub(dataset, "2")  # 将数据集中英文版本的实体描述的主语换成对应的名字,并写入文件中
     # ids = process_id()  # 将翻译之后的法语数据文本进行id清洗
     # generate_des(ids)  # 将清洗后id和description写入最终文本中
-    # ent_tab = get_eng_name("fr_en")  # 将翻译之后的法语->英语实体名进行id映射，返回字典{id,ent_eng_name}
-    # generate_comment(ent_tab, "fr")  # 生成替换掉主语的实体文本，并写入文件zhong
+
+     # ent_tab = get_eng_name(dataset)  # 将翻译之后的法语->英语实体名进行id映射，返回字典{id,ent_eng_name}
+     # generate_comment(ent_tab, dataset[:2])  # 生成替换掉主语的实体文本，并写入文件zhong
+
+
+def process_extra(dataset):
+    pass
+
+
+if __name__ == "__main__":
+    dataset = "fr_en"
+    process_des(dataset)   # eg:生成fr-en中种子对齐对中实体的英文描述数据
+    #process_extra(dataset)  #eg:生成fr-en中种子对齐对之外的实体的英文描述数据
+

@@ -7,10 +7,10 @@ from openprompt.plms import load_plm
 import torch
 import json
 
-classes = ['athlete', 'artist', 'actor', 'politician', 'leader', 'businessman', 'royal', 'country', 'city', 'continent',
-           'brand', 'software', 'airplane', 'food', 'game', 'vehicle', 'federation', 'institution', 'sports team',
-           'political party', 'education', 'company', 'government', 'army', 'religion', 'sports league', 'mall',
-           'school', 'hospital', 'airport', 'residence', 'body of water', 'island', 'mountain', 'park', 'movie',
+classes = ['athlete', 'musical', 'actor', 'politician', 'leader', 'businessman', 'royal', 'country', 'city',
+           'continent', 'brand', 'software', 'airplane', 'food', 'game', 'vehicle', 'federation', 'institution',
+           'sports team', 'political party', 'education', 'company', 'government', 'army', 'religion', 'sports league',
+           'mall', 'school', 'hospital', 'airport', 'residence', 'body of water', 'island', 'mountain', 'park', 'movie',
            'music', 'painting', 'broadcast', 'war', 'disaster', 'election', 'sporting events', 'festival', 'language',
            'law', 'award', 'disease', 'currency']
 
@@ -49,17 +49,17 @@ for lt in language_type:
                 "weightlifter",
                 "hurdler"
             ],
-            "artist": [
-                "art",
-                "painter",
-                "illustrator",
-                "musician",
-                "artwork",
-                "sculptor",
-                "photographer",
-                "sculpture",
-                "decorator",
-                "visual art"
+            "musical": [
+                "music",
+                "singing",
+                "lyrical",
+                "movie",
+                "band",
+                "dance",
+                "artistic",
+                "melodic",
+                "melodious",
+                "philharmonic"
             ],
             "actor": [
                 "comedy",
@@ -622,7 +622,7 @@ for lt in language_type:
     promptModel.eval()
     typing_res = {}
     cnt = 1
-    failed_ids = {"1":[],"2":[]}
+    failed_ids = {"1": [], "2": []}
     with torch.no_grad():
         for batch in data_loader:
             try:

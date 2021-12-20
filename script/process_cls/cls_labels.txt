@@ -1,4 +1,4 @@
-athlete,artist,actor,politician,leader,businessman,royal
+athlete,musical,actor,politician,leader,businessman,royal
 country,city,continent
 brand,software,airplane,food,game,vehicle
 federation,institution,sports team,political party,education,company,government,army,religion,sports league

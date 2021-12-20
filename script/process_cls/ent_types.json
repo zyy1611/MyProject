@@ -11,17 +11,17 @@
         "weightlifter",
         "hurdler"
     ],
-    "artist": [
-        "art",
-        "painter",
-        "illustrator",
-        "musician",
-        "artwork",
-        "sculptor",
-        "photographer",
-        "sculpture",
-        "decorator",
-        "visual art"
+    "musical": [
+        "music",
+        "singing",
+        "lyrical",
+        "movie",
+        "band",
+        "dance",
+        "artistic",
+        "melodic",
+        "melodious",
+        "philharmonic"
     ],
     "actor": [
         "comedy",

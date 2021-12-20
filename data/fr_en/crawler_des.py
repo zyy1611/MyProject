@@ -16,29 +16,29 @@ des_txt = {}
 
 def run(que):
     headers = {
-        'Cookie': '_ga=GA1.1.910646490.1638951329; _ga_ZRJC7X9CNM=GS1.1.1639403430.2.0.1639403430.0',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36',
-    }
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+        'Proxy - Connection': 'keep - alive',
+        'Cookie': 'dbpv_has_js=1; dbpv_primary_lang=fr; _ga=GA1.1.910646490.1638951329; _ga_ZRJC7X9CNM=GS1.1.1639403430.2.0.1639403430.0',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36'}
     proxies = {
-        'https': '127.0.0.1:7078',  # 查找到你的vpn在本机使用的https代理端口
+        'https': '127.0.0.1:7080',  # 查找到你的vpn在本机使用的https代理端口
     }
-
     cnt = 0
     while que.empty() is not True:
         try:
             ent = que.get()
             id = ent[0]
-            url = ent[1]
+            url = "http://fr.dbpedia.org/page/{}".format(ent[1])
             print(url)
             res = requests.get(url, headers=headers, proxies=proxies)
-            soup = BeautifulSoup(res.content, "html.parser", from_encoding='gb18030')
-            print(soup)
-            content = soup.find('meta', property="og:description")['content']
-            print(content)
+            res.encoding = 'gbk'
+            soup = BeautifulSoup(res.content, "html.parser", from_encoding='utf8')
+            content = soup.find('p').get_text()
             global des_txt
             des_txt[id] = content
             print("---->")
-            print(len(des_txt))
+            for obj in des_txt:
+                print(obj, des_txt[obj])
             time.sleep(2)
             cnt = cnt + 1
             print("完成第 %s 个" % (cnt))
@@ -46,38 +46,82 @@ def run(que):
             print(e)
 
 
-def prepare(result):
+def refer_run(que):
+    # step1:指定Url
+    headers = {
+        'Cookie': 'dbpv_has_js=1; dbpv_primary_lang=fr; _ga=GA1.1.910646490.1638951329; _ga_ZRJC7X9CNM=GS1.1.1639403430.2.0.1639403430.0',
+        'Host': 'fr.dbpedia.org',
+        'Origin': 'http://fr.dbpedia.org',
+        'Referer': '',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36',
+    }
+    proxies = {
+        'https': '127.0.0.1:7080',  # 查找到你的vpn在本机使用的https代理端口
+    }
+    cnt = 0
+    url = "http://fr.dbpedia.org/sparql"
+
+    while que.empty() is not True:
+        try:
+            ent = que.get()
+            id = ent[0]
+            ent_name = ent[1]
+            headers["Referer"] = 'http://fr.dbpedia.org/page/{}'.format(ent_name)
+            print(headers["Referer"])
+            query = "SELECT DISTINCT ?hasprop ?v where { <http://fr.dbpedia.org/resource/" + ent_name + "> ?hasprop ?v}"
+            data = {'default-graph-uri': 'http://fr.dbpedia.org',
+                    'query': query}
+            page_text = requests.post(url=url, headers=headers, proxies=proxies, data=data)
+            page_text.encoding = 'gbk'
+            soup = BeautifulSoup(page_text.content, "html.parser", from_encoding='utf8')
+            if len(soup.find_all(name="literal", attrs={'xml:lang': 'fr'}))==0:
+                content = "none"
+            else:
+                content = soup.find_all(name="literal", attrs={'xml:lang': 'fr'})[-1].get_text()
+            global des_txt
+            des_txt[id] = content
+            print("---->")
+            print(id, content)
+            time.sleep(2)
+            cnt = cnt + 1
+            print("完成第 %s 个" % (cnt))
+        except Exception as e:
+            print(e)
+
+
+def prepare(result, second=False):
     queue = Queue()
     for obj in result:
         queue.put([obj, result[obj]])
     for i in range(1, 6):
-        t = threading.Thread(target=run, args=(queue,))
+        if second is True:
+            t = threading.Thread(target=refer_run, args=(queue,))
+        else:
+            t = threading.Thread(target=run, args=(queue,))
         t.start()
         t.join()
-    with open("./extra_des.json", 'w', encoding='utf-8') as fr:
+    with open("./extra_fr_des.json", 'w', encoding='utf-8') as fr:
         global des_txt
+        print(len(des_txt))
         json.dump(des_txt, fp=fr, ensure_ascii=False, indent=4, sort_keys=False)
 
 
 if __name__ == "__main__":
     done_ids = []
-    with open("./extra_des.json", 'r', encoding='utf-8') as fr:
+    with open("./extra_fr_des.json", 'r', encoding='utf-8') as fr:
         json_des = json.load(fr)
         for obj in json_des:
             done_ids.append(obj)
     fr.close()
     des_txt = json_des
-    cnt=1
+    print(len(des_txt))
     with open("./fr_en_extra.json", 'r', encoding='utf8') as fr:
         url = {}
         json_data = json.load(fr)
         for obj in json_data:
-            if obj in done_ids: continue
-            if json_data[obj].split("//")[1].find("fr.") != -1:
+            if json_data[obj].split("//")[1].find("fr.") == -1:
                 continue
-            url[int(obj)] = json_data[obj]
-            cnt = cnt +1
-            if cnt==101:
-                break
-    prepare(url)
-    print(des_txt)
+            if des_txt.get(obj) is not None and len(des_txt[obj]) > 0: continue
+            ent_name = json_data[obj].split('/')[-1]
+            url[int(obj)] = ent_name
+    prepare(url, True)
