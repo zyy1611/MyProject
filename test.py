@@ -15,7 +15,7 @@ classes = ['athlete', 'musical', 'actor', 'politician', 'leader', 'businessman',
            'law', 'award', 'disease', 'currency']
 
 data_set = "fr_en"
-language_type = ["1", "2"]
+language_type = ["2"]
 for lt in language_type:
     with open("./process_data/{}/comment_{}_description.json".format(data_set, lt), 'r',
               encoding='utf8') as fr:
@@ -30,7 +30,7 @@ for lt in language_type:
         pos = pos + 1
     plm, tokenizer, model_config, WrapperClass = load_plm("bert", "bert-base-uncased")
     promptTemplate = ManualTemplate(
-        text='{"meta":"sentence"},{"meta": "ent"} is {"mask"}',
+        text='{"meta":"sentence"},In this sentence,{"meta": "ent"} is {"mask"}',
         tokenizer=tokenizer,
     )
 
@@ -622,7 +622,7 @@ for lt in language_type:
     promptModel.eval()
     typing_res = {}
     cnt = 1
-    failed_ids = {"1": [], "2": []}
+    failed_ids = {"2": []}
     with torch.no_grad():
         for batch in data_loader:
             try:

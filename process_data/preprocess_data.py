@@ -10,6 +10,16 @@ def delete_sub(text_obj):
     return None
 
 
+def clean(str):
+    str = str.strip()
+    sstr = ""
+    for i in range(len(str) - 1):
+        if str[i] == ' ' and str[i + 1] == ' ': continue
+        sstr += str[i]
+    sstr += str[-1]
+    return sstr
+
+
 class ReplaceSub(object):
     def __init__(self, dataset, comment_index, des_data, link_data):
         self.dataset = dataset
@@ -27,10 +37,10 @@ class ReplaceSub(object):
                 self.cnt = self.cnt + 1
                 print(self.cnt)
                 self.result[ent_id] = {"ent_name": self.link_data[ent_id],
-                                       "description": text_obj}
+                                       "description": clean(text_obj)}
             else:
                 self.result[ent_id] = {"ent_name": self.link_data[ent_id],
-                                       "description": text_obj.replace(del_sub, self.link_data[ent_id])}
+                                       "description": clean(text_obj.replace(del_sub, self.link_data[ent_id]))}
         print(len(self.result))
         try:
             with open("./{}/comment_{}_description.json".format(self.dataset, self.comment_index), 'w',
@@ -175,9 +185,10 @@ def generate_comment(ent_tab, dataset):
             if del_sub is None:
                 cnt = cnt + 1
                 print(cnt)
-                result[th[0]] = {"ent_name": ent_tab[th[0]], "description": th[1]}
+                result[th[0]] = {"ent_name": ent_tab[th[0]], "description": clean(th[1])}
             else:
-                result[th[0]] = {"ent_name": ent_tab[th[0]], "description": th[1].replace(del_sub, ent_tab[th[0]])}
+                result[th[0]] = {"ent_name": ent_tab[th[0]],
+                                 "description": clean(th[1].replace(del_sub, ent_tab[th[0]]))}
     print(len(result))
     try:
         with open("./{}_en/comment_1_description.json".format(dataset), 'w',
@@ -189,20 +200,45 @@ def generate_comment(ent_tab, dataset):
 
 
 def process_des(dataset):
-    replace_sub(dataset, "2")  # 将数据集中英文版本的实体描述的主语换成对应的名字,并写入文件中
+    # replace_sub(dataset, "2")  # 将数据集中英文版本的实体描述的主语换成对应的名字,并写入文件中
     # ids = process_id()  # 将翻译之后的法语数据文本进行id清洗
     # generate_des(ids)  # 将清洗后id和description写入最终文本中
 
-     # ent_tab = get_eng_name(dataset)  # 将翻译之后的法语->英语实体名进行id映射，返回字典{id,ent_eng_name}
-     # generate_comment(ent_tab, dataset[:2])  # 生成替换掉主语的实体文本，并写入文件zhong
+    ent_tab = get_eng_name(dataset)  # 将翻译之后的法语->英语实体名进行id映射，返回字典{id,ent_eng_name}
+    generate_comment(ent_tab, dataset[:2])  # 生成替换掉主语的实体文本，并写入文件zhong
 
 
 def process_extra(dataset):
-    pass
+    with open("./{}/comment_2_description.json".format(dataset), 'r', encoding='utf-8') as fr:
+        json_data = json.load(fr)
+        print(len(json_data))
+    # ent_name = get_name(dataset, 2)
+    # with open("../data/{}/extra_eng_des.json".format(dataset), 'r', encoding='utf-8') as fe:
+    #     extra_eng_data = json.load(fe)
+    #     for obj in extra_eng_data:
+    #         print(ent_name[int(obj)])
+    #         text_obj = extra_eng_data[obj]
+    #         if len(text_obj) == 0: text_obj = ent_name[int(obj)]
+    #         del_sub = delete_sub(text_obj)
+    #         if del_sub is None:
+    #             json_data[obj] = {"ent_name": ent_name[int(obj)],
+    #                               "description": clean(text_obj)}
+    #         else:
+    #             json_data[obj] = {"ent_name": ent_name[int(obj)],
+    #                               "description": clean(text_obj.replace(del_sub, ent_name[int(obj)]))}
+    # for obj in json_data:
+    #     print(obj, json_data[obj])
+    # print(len(json_data))
+    # try:
+    #     with open("./{}/comment_2_description.json".format(dataset), 'w',
+    #               encoding='utf-8') as fw:
+    #         json.dump(json_data, fw, ensure_ascii=False, indent=4, sort_keys=False)
+    #         fw.close()
+    # except Exception as e:
+    #     print("写入失败", e)
 
 
 if __name__ == "__main__":
     dataset = "fr_en"
-    process_des(dataset)   # eg:生成fr-en中种子对齐对中实体的英文描述数据
-    #process_extra(dataset)  #eg:生成fr-en中种子对齐对之外的实体的英文描述数据
-
+    #process_des(dataset)  # eg:生成fr-en中种子对齐对中实体的英文描述数据
+    process_extra(dataset)  # eg:生成fr-en中种子对齐对之外的实体的英文描述数据
