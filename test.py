@@ -7,15 +7,15 @@ from openprompt.plms import load_plm
 import torch
 import json
 
-classes = ['athlete', 'musical', 'actor', 'politician', 'leader', 'businessman', 'royal', 'country', 'city',
-           'continent', 'brand', 'software', 'airplane', 'food', 'game', 'vehicle', 'federation', 'institution',
-           'sports team', 'political party', 'education', 'company', 'government', 'army', 'religion', 'sports league',
-           'mall', 'school', 'hospital', 'airport', 'residence', 'body of water', 'island', 'mountain', 'park', 'movie',
-           'music', 'painting', 'broadcast', 'war', 'disaster', 'election', 'sporting events', 'festival', 'language',
-           'law', 'award', 'disease', 'currency']
+classes = ['athlete', 'musician', 'actor', 'statesman', 'writer', 'leader', 'businessman', 'royal', 'philosopher',
+           'country', 'city', 'continent', 'brand', 'software', 'airplane', 'recreation', 'vehicle', 'club',
+           'institution', 'sports team', 'political party', 'company', 'government', 'army', 'religion',
+           'sports league', 'mall', 'school', 'hospital', 'airport', 'stadium', 'residence', 'body of water', 'island',
+           'mountain', 'park', 'movie', 'music', 'painting', 'broadcast', 'war', 'disaster', 'sporting events',
+           'festival', 'language', 'law', 'award', 'disease', 'currency']
 
 data_set = "fr_en"
-language_type = ["2"]
+language_type = ["1", "2"]
 for lt in language_type:
     with open("./process_data/{}/comment_{}_description.json".format(data_set, lt), 'r',
               encoding='utf8') as fr:
@@ -38,6 +38,7 @@ for lt in language_type:
         classes=classes,
         label_words={
             "athlete": [
+                "athlete",
                 "sport",
                 "sportsman",
                 "skater",
@@ -46,22 +47,22 @@ for lt in language_type:
                 "olympian",
                 "gymnast",
                 "skier",
-                "weightlifter",
-                "hurdler"
+                "weightlifter"
             ],
-            "musical": [
+            "musician": [
+                "musician",
                 "music",
-                "singing",
-                "lyrical",
-                "movie",
-                "band",
-                "dance",
-                "artistic",
-                "melodic",
-                "melodious",
-                "philharmonic"
+                "composer",
+                "pianist",
+                "bassist",
+                "singer",
+                "percussionist",
+                "violinist",
+                "flutist",
+                "instrumentalist"
             ],
             "actor": [
+                "actor",
                 "comedy",
                 "barrymore",
                 "mime",
@@ -70,22 +71,33 @@ for lt in language_type:
                 "thespian",
                 "doer",
                 "fairbanks",
-                "performer",
-                "radio"
+                "performer"
             ],
-            "politician": [
-                "politics",
-                "leader",
-                "governor",
-                "democrat",
-                "candidate",
+            "statesman": [
                 "statesman",
-                "legislator",
-                "demagogue",
-                "campaigner",
-                "political"
+                "politician",
+                "stateswoman",
+                "solon",
+                "national leader",
+                "politico",
+                "elder statesman",
+                "georges clemenceau",
+                "mikhail sergeyevich gorbachev"
+            ],
+            "writer": [
+                "writer",
+                "author",
+                "poet",
+                "essayist",
+                "novelist",
+                "bronte",
+                "burroughs",
+                "literature",
+                "scriptwriter",
+                "journalist"
             ],
             "leader": [
+                "leader",
                 "chief",
                 "chieftain",
                 "politician",
@@ -94,10 +106,10 @@ for lt in language_type:
                 "head",
                 "commander",
                 "lawmaker",
-                "guru",
-                "president"
+                "guru"
             ],
             "businessman": [
+                "businessman",
                 "entrepreneur",
                 "merchant",
                 "business",
@@ -106,10 +118,10 @@ for lt in language_type:
                 "industrialist",
                 "magnate",
                 "owner",
-                "oilman",
-                "businesswoman"
+                "oilman"
             ],
             "royal": [
+                "royal",
                 "imperial",
                 "noble",
                 "king",
@@ -118,10 +130,22 @@ for lt in language_type:
                 "monarch",
                 "prince",
                 "princess",
-                "coronation",
-                "purple"
+                "coronation"
+            ],
+            "philosopher": [
+                "philosopher",
+                "philosophy",
+                "aristotle",
+                "immanuel kant",
+                "scholar",
+                "pythagoras",
+                "nietzsche",
+                "naturalist",
+                "plato",
+                "theology"
             ],
             "country": [
+                "country",
                 "nation",
                 "state",
                 "land",
@@ -130,10 +154,10 @@ for lt in language_type:
                 "homeland",
                 "region",
                 "united nations",
-                "quadrant",
-                "corner"
+                "quadrant"
             ],
             "city": [
+                "city",
                 "metropolis",
                 "town",
                 "municipality",
@@ -142,10 +166,10 @@ for lt in language_type:
                 "municipal",
                 "megalopolis",
                 "civilization",
-                "village",
-                "downtown"
+                "village"
             ],
             "continent": [
+                "continent",
                 "europe",
                 "africa",
                 "asia",
@@ -154,10 +178,10 @@ for lt in language_type:
                 "australia",
                 "north america",
                 "south america",
-                "australasia",
-                "landmass"
+                "australasia"
             ],
             "brand": [
+                "brand",
                 "mark",
                 "label",
                 "trademark",
@@ -166,10 +190,10 @@ for lt in language_type:
                 "marketing",
                 "blade",
                 "trade name",
-                "stigmatize",
-                "hallmark"
+                "stigmatize"
             ],
             "software": [
+                "software",
                 "computer program",
                 "linux",
                 "compiler",
@@ -178,10 +202,10 @@ for lt in language_type:
                 "program",
                 "malware",
                 "hardware",
-                "computing",
-                "computer"
+                "computing"
             ],
             "airplane": [
+                "airplane",
                 "plane",
                 "airliner",
                 "propeller",
@@ -190,34 +214,22 @@ for lt in language_type:
                 "jet",
                 "biplane",
                 "aeroplane",
-                "aircraft",
-                "aviator"
+                "aircraft"
             ],
-            "food": [
-                "nutrition",
-                "rice",
-                "nutrient",
-                "beef",
-                "meat",
-                "provender",
-                "victuals",
-                "cooking",
-                "seafood",
-                "pabulum"
-            ],
-            "game": [
+            "recreation": [
+                "recreation",
                 "play",
-                "computer game",
-                "tennis",
-                "baseball",
-                "gamey",
-                "pitch",
-                "competition",
-                "party game",
-                "pinball",
-                "card game"
+                "amusement",
+                "fun",
+                "diversion",
+                "leisure",
+                "pastime",
+                "game",
+                "entertainment",
+                "park"
             ],
             "vehicle": [
+                "vehicle",
                 "bicycle",
                 "motorcycle",
                 "wheel",
@@ -226,22 +238,22 @@ for lt in language_type:
                 "bus",
                 "automobile",
                 "aircraft",
-                "wagon",
-                "train"
+                "wagon"
             ],
-            "federation": [
-                "confederation",
-                "organization",
-                "organisation",
-                "union",
-                "association",
-                "committee",
-                "constitution",
-                "establishment",
-                "confederacy",
-                "alliance"
+            "club": [
+                "club",
+                "bludgeon",
+                "golf club",
+                "nightclub",
+                "cudgel",
+                "truncheon",
+                "baton",
+                "gather",
+                "clubhouse",
+                "lodge"
             ],
             "institution": [
+                "institution",
                 "establishment",
                 "organization",
                 "founding",
@@ -250,16 +262,16 @@ for lt in language_type:
                 "creation",
                 "university",
                 "academic",
-                "society",
-                "organisation"
+                "society"
             ],
             "sports team": [
+                "sports team",
                 "team",
                 "sport",
-                "lacrosse",
-                "squad"
+                "lacrosse"
             ],
             "political party": [
+                "political party",
                 "conservative party",
                 "republican party",
                 "democracy",
@@ -268,22 +280,10 @@ for lt in language_type:
                 "kuomintang",
                 "third party",
                 "opposition",
-                "liberal party",
-                "war party"
-            ],
-            "education": [
-                "teaching",
-                "pedagogy",
-                "instruction",
-                "school",
-                "curriculum",
-                "learning",
-                "college",
-                "university",
-                "educational activity",
-                "didactics"
+                "liberal party"
             ],
             "company": [
+                "company",
                 "business",
                 "corporation",
                 "subsidiary",
@@ -292,10 +292,10 @@ for lt in language_type:
                 "accompany",
                 "unit",
                 "fellowship",
-                "distributor",
-                "companionship"
+                "distributor"
             ],
             "government": [
+                "government",
                 "governance",
                 "administration",
                 "politics",
@@ -304,10 +304,10 @@ for lt in language_type:
                 "state",
                 "judiciary",
                 "political science",
-                "authorities",
-                "regime"
+                "authorities"
             ],
             "army": [
+                "army",
                 "military",
                 "soldier",
                 "militia",
@@ -316,10 +316,10 @@ for lt in language_type:
                 "war machine",
                 "regular army",
                 "air force",
-                "armed forces",
-                "corps"
+                "armed forces"
             ],
             "religion": [
+                "religion",
                 "buddhism",
                 "judaism",
                 "faith",
@@ -328,26 +328,26 @@ for lt in language_type:
                 "hinduism",
                 "cult",
                 "belief",
-                "sikhism",
-                "atheism"
+                "sikhism"
             ],
             "sports league": [
+                "sports league",
                 "tournament",
                 "association football",
-                "conference",
-                "golf"
+                "conference"
             ],
             "mall": [
+                "mall",
                 "shopping mall",
                 "plaza",
                 "shop",
                 "strip mall",
                 "center",
                 "downtown",
-                "shopping",
-                "store"
+                "shopping"
             ],
             "school": [
+                "school",
                 "education",
                 "university",
                 "academy",
@@ -356,10 +356,10 @@ for lt in language_type:
                 "classroom",
                 "grammar school",
                 "student",
-                "primary school",
-                "secondary school"
+                "primary school"
             ],
             "hospital": [
+                "hospital",
                 "clinic",
                 "outpatient",
                 "patient",
@@ -368,10 +368,10 @@ for lt in language_type:
                 "psychiatric hospital",
                 "surgery",
                 "physician",
-                "infirmary",
-                "sanatorium"
+                "infirmary"
             ],
             "airport": [
+                "airport",
                 "aerodrome",
                 "hangar",
                 "runway",
@@ -380,10 +380,22 @@ for lt in language_type:
                 "heliport",
                 "airfield",
                 "taxiway",
-                "control tower",
-                "hotel"
+                "control tower"
+            ],
+            "stadium": [
+                "stadium",
+                "arena",
+                "baseball",
+                "ballpark",
+                "dome",
+                "park",
+                "football",
+                "association football",
+                "coliseum",
+                "sport"
             ],
             "residence": [
+                "residence",
                 "hall",
                 "home",
                 "house",
@@ -392,10 +404,10 @@ for lt in language_type:
                 "mansion",
                 "apartment",
                 "bedroom",
-                "domicile",
-                "address"
+                "domicile"
             ],
             "body of water": [
+                "body of water",
                 "lake",
                 "water",
                 "ocean",
@@ -404,10 +416,10 @@ for lt in language_type:
                 "river",
                 "puddle",
                 "stream",
-                "waterfall",
-                "waterway"
+                "waterfall"
             ],
             "island": [
+                "island",
                 "greenland",
                 "continent",
                 "australia",
@@ -416,10 +428,10 @@ for lt in language_type:
                 "singapore",
                 "archipelago",
                 "mainland",
-                "iceland",
-                "seychelles"
+                "iceland"
             ],
             "mountain": [
+                "mountain",
                 "hill",
                 "volcano",
                 "mount",
@@ -428,10 +440,10 @@ for lt in language_type:
                 "mount everest",
                 "orogeny",
                 "mountainside",
-                "river",
-                "alpine"
+                "river"
             ],
             "park": [
+                "park",
                 "playground",
                 "recreation",
                 "green",
@@ -440,10 +452,10 @@ for lt in language_type:
                 "garden",
                 "national park",
                 "stadium",
-                "grass",
-                "yard"
+                "grass"
             ],
             "movie": [
+                "movie",
                 "film",
                 "television",
                 "movie projector",
@@ -452,10 +464,10 @@ for lt in language_type:
                 "cinema",
                 "dvd",
                 "movie theater",
-                "celluloid",
-                "screenplay"
+                "celluloid"
             ],
             "music": [
+                "music",
                 "piano",
                 "jazz",
                 "sound",
@@ -464,10 +476,10 @@ for lt in language_type:
                 "song",
                 "sheet music",
                 "classical music",
-                "rhythm",
-                "harmony"
+                "rhythm"
             ],
             "painting": [
+                "painting",
                 "pigment",
                 "oil paint",
                 "acrylic paint",
@@ -476,10 +488,10 @@ for lt in language_type:
                 "acrylic",
                 "watercolor",
                 "watercolour",
-                "latex",
-                "distemper"
+                "latex"
             ],
             "broadcast": [
+                "broadcast",
                 "radio",
                 "air",
                 "television",
@@ -488,10 +500,10 @@ for lt in language_type:
                 "spread",
                 "rebroadcast",
                 "simulcast",
-                "publicize",
-                "cable television"
+                "publicize"
             ],
             "war": [
+                "war",
                 "warfare",
                 "battle",
                 "conflict",
@@ -500,10 +512,10 @@ for lt in language_type:
                 "combat",
                 "vietnam war",
                 "genocide",
-                "state of war",
-                "civil war"
+                "state of war"
             ],
             "disaster": [
+                "disaster",
                 "catastrophe",
                 "calamity",
                 "tragedy",
@@ -512,27 +524,15 @@ for lt in language_type:
                 "devastation",
                 "earthquake",
                 "hardship",
-                "cataclysm",
-                "hurricane"
-            ],
-            "election": [
-                "vote",
-                "reelection",
-                "legislature",
-                "referendum",
-                "ballot",
-                "poll",
-                "electoral",
-                "absentee ballot",
-                "general election",
-                "elect"
+                "cataclysm"
             ],
             "sporting events": [
+                "sporting events",
                 "association football",
-                "rugby union",
-                "olympic games"
+                "rugby union"
             ],
             "festival": [
+                "festival",
                 "holiday",
                 "celebration",
                 "fete",
@@ -541,10 +541,10 @@ for lt in language_type:
                 "gala",
                 "jubilee",
                 "event",
-                "oktoberfest",
-                "fiesta"
+                "oktoberfest"
             ],
             "language": [
+                "language",
                 "speech",
                 "dialect",
                 "word",
@@ -553,10 +553,10 @@ for lt in language_type:
                 "sign language",
                 "terminology",
                 "syntax",
-                "linguistics",
-                "natural language"
+                "linguistics"
             ],
             "law": [
+                "law",
                 "jurisprudence",
                 "constitution",
                 "state",
@@ -565,10 +565,10 @@ for lt in language_type:
                 "common law",
                 "statute",
                 "natural law",
-                "rule",
-                "legislation"
+                "rule"
             ],
             "award": [
+                "award",
                 "prize",
                 "trophy",
                 "medal",
@@ -577,10 +577,10 @@ for lt in language_type:
                 "accolade",
                 "honour",
                 "nobel prize",
-                "excellence",
-                "emmy"
+                "excellence"
             ],
             "disease": [
+                "disease",
                 "virus",
                 "cancer",
                 "syndrome",
@@ -589,10 +589,10 @@ for lt in language_type:
                 "illness",
                 "infectious disease",
                 "malaria",
-                "leprosy",
-                "malignancy"
+                "leprosy"
             ],
             "currency": [
+                "currency",
                 "money",
                 "dollar",
                 "banknote",
@@ -601,8 +601,7 @@ for lt in language_type:
                 "franc",
                 "medium of exchange",
                 "paper money",
-                "cash",
-                "euro"
+                "cash"
             ]
         },
         tokenizer=tokenizer,
@@ -622,7 +621,7 @@ for lt in language_type:
     promptModel.eval()
     typing_res = {}
     cnt = 1
-    failed_ids = {"2": []}
+    failed_ids = {"1": [], "2": []}
     with torch.no_grad():
         for batch in data_loader:
             try:

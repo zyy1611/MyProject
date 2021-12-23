@@ -1,5 +1,8 @@
 import os
 import json
+import re
+from langdetect import detect
+from langdetect import detect_langs
 
 
 def delete_sub(text_obj):
@@ -208,37 +211,99 @@ def process_des(dataset):
     generate_comment(ent_tab, dataset[:2])  # 生成替换掉主语的实体文本，并写入文件zhong
 
 
-def process_extra(dataset):
+def process_eng_extra(dataset):
     with open("./{}/comment_2_description.json".format(dataset), 'r', encoding='utf-8') as fr:
         json_data = json.load(fr)
         print(len(json_data))
-    # ent_name = get_name(dataset, 2)
-    # with open("../data/{}/extra_eng_des.json".format(dataset), 'r', encoding='utf-8') as fe:
-    #     extra_eng_data = json.load(fe)
-    #     for obj in extra_eng_data:
-    #         print(ent_name[int(obj)])
-    #         text_obj = extra_eng_data[obj]
-    #         if len(text_obj) == 0: text_obj = ent_name[int(obj)]
-    #         del_sub = delete_sub(text_obj)
-    #         if del_sub is None:
-    #             json_data[obj] = {"ent_name": ent_name[int(obj)],
-    #                               "description": clean(text_obj)}
-    #         else:
-    #             json_data[obj] = {"ent_name": ent_name[int(obj)],
-    #                               "description": clean(text_obj.replace(del_sub, ent_name[int(obj)]))}
-    # for obj in json_data:
-    #     print(obj, json_data[obj])
-    # print(len(json_data))
+    ent_name = get_name(dataset, 2)
+    with open("../data/{}/extra_eng_des.json".format(dataset), 'r', encoding='utf-8') as fe:
+        extra_eng_data = json.load(fe)
+        for obj in extra_eng_data:
+            print(ent_name[int(obj)])
+            text_obj = extra_eng_data[obj]
+            if len(text_obj) == 0: text_obj = ent_name[int(obj)]
+            del_sub = delete_sub(text_obj)
+            if del_sub is None:
+                json_data[obj] = {"ent_name": ent_name[int(obj)],
+                                  "description": clean(text_obj)}
+            else:
+                json_data[obj] = {"ent_name": ent_name[int(obj)],
+                                  "description": clean(text_obj.replace(del_sub, ent_name[int(obj)]))}
+    for obj in json_data:
+        print(obj, json_data[obj])
+    print(len(json_data))
+    try:
+        with open("./{}/comment_2_description.json".format(dataset), 'w',
+                  encoding='utf-8') as fw:
+            json.dump(json_data, fw, ensure_ascii=False, indent=4, sort_keys=False)
+            fw.close()
+    except Exception as e:
+        print("写入失败", e)
+
+
+def process_fr_extra(dataset):
+    with open("./{}/comment_1_description.json".format(dataset), 'r',
+              encoding='utf-8') as fr:
+        result = json.load(fr)
+        print(len(result))
+    id = []
+    with open("../data/{}/ent_ids_1".format(dataset), 'r', encoding='utf8') as fr:
+        for line in fr:
+            th = line[:-1].split("\t")
+            id.append(th[0])
+    print(len(id))
+    for obj in id:
+        if result.get(obj) is None:
+            print(obj)
+    # ids = []
+    # with open('../data/{}/extra_fr_des.json'.format(dataset), 'r', encoding='utf8') as fr:
+    #     json_data = json.load(fr)
+    #     for obj in json_data:
+    #         ids.append(obj)
+    #     print(len(ids))
+    # extra_fr = {}
+    # with open('./{}/extra_fr2.txt'.format(dataset), 'r', encoding='utf8') as fr:
+    #     cnt = 0
+    #     for line in fr:
+    #         extra_fr[ids[cnt]] = line[:-1]
+    #         cnt = cnt + 1
+    # ent_tab = get_eng_name(dataset)  # 将翻译之后的法语->英语实体名进行id映射，返回字典{id,ent_eng_name}
+    #
+    # for obj in extra_fr:
+    #     del_sub = delete_sub(extra_fr[obj])
+    #     if del_sub is None:
+    #         result[obj] = {"ent_name": ent_tab[obj], "description": clean(extra_fr[obj])}
+    #     else:
+    #         result[obj] = {"ent_name": ent_tab[obj],
+    #                          "description": clean(extra_fr[obj].replace(del_sub, ent_tab[obj]))}
     # try:
-    #     with open("./{}/comment_2_description.json".format(dataset), 'w',
+    #     with open("./{}/comment_1_description.json".format(dataset), 'w',
     #               encoding='utf-8') as fw:
-    #         json.dump(json_data, fw, ensure_ascii=False, indent=4, sort_keys=False)
+    #         json.dump(result, fw, ensure_ascii=False, indent=4, sort_keys=False)
     #         fw.close()
     # except Exception as e:
     #     print("写入失败", e)
+    # for obj in json_data:
+    #     pos = json_data[obj].find("↑")
+    #     if pos > -1:
+    #         json_data[obj] = json_data[obj][:pos]
+    #
+    # for obj in json_data:
+    #     str = json_data[obj]
+    #     a='\(.*\)'
+    #     txt=re.sub(a,'',str)
+    #     json_data[obj]=txt
+    #
+    # with open('../data/{}/extra_fr_des.json'.format(dataset), 'w', encoding='utf8') as fw:
+    #     json.dump(json_data, fw, ensure_ascii=False, indent=4, sort_keys=False)
+
+
+def process_extra(dataset):
+    # process_eng_extra(dataset)
+    process_fr_extra(dataset)
 
 
 if __name__ == "__main__":
     dataset = "fr_en"
-    #process_des(dataset)  # eg:生成fr-en中种子对齐对中实体的英文描述数据
+    # process_des(dataset)  # eg:生成fr-en中种子对齐对中实体的英文描述数据
     process_extra(dataset)  # eg:生成fr-en中种子对齐对之外的实体的英文描述数据

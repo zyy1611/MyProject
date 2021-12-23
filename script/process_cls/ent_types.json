@@ -1,5 +1,6 @@
 {
     "athlete": [
+        "athlete",
         "sport",
         "sportsman",
         "skater",
@@ -8,22 +9,22 @@
         "olympian",
         "gymnast",
         "skier",
-        "weightlifter",
-        "hurdler"
+        "weightlifter"
     ],
-    "musical": [
+    "musician": [
+        "musician",
         "music",
-        "singing",
-        "lyrical",
-        "movie",
-        "band",
-        "dance",
-        "artistic",
-        "melodic",
-        "melodious",
-        "philharmonic"
+        "composer",
+        "pianist",
+        "bassist",
+        "singer",
+        "percussionist",
+        "violinist",
+        "flutist",
+        "instrumentalist"
     ],
     "actor": [
+        "actor",
         "comedy",
         "barrymore",
         "mime",
@@ -32,22 +33,33 @@
         "thespian",
         "doer",
         "fairbanks",
-        "performer",
-        "radio"
+        "performer"
     ],
-    "politician": [
-        "politics",
-        "leader",
-        "governor",
-        "democrat",
-        "candidate",
+    "statesman": [
         "statesman",
-        "legislator",
-        "demagogue",
-        "campaigner",
-        "political"
+        "politician",
+        "stateswoman",
+        "solon",
+        "national leader",
+        "politico",
+        "elder statesman",
+        "georges clemenceau",
+        "mikhail sergeyevich gorbachev"
+    ],
+    "writer": [
+        "writer",
+        "author",
+        "poet",
+        "essayist",
+        "novelist",
+        "bronte",
+        "burroughs",
+        "literature",
+        "scriptwriter",
+        "journalist"
     ],
     "leader": [
+        "leader",
         "chief",
         "chieftain",
         "politician",
@@ -56,10 +68,10 @@
         "head",
         "commander",
         "lawmaker",
-        "guru",
-        "president"
+        "guru"
     ],
     "businessman": [
+        "businessman",
         "entrepreneur",
         "merchant",
         "business",
@@ -68,10 +80,10 @@
         "industrialist",
         "magnate",
         "owner",
-        "oilman",
-        "businesswoman"
+        "oilman"
     ],
     "royal": [
+        "royal",
         "imperial",
         "noble",
         "king",
@@ -80,10 +92,22 @@
         "monarch",
         "prince",
         "princess",
-        "coronation",
-        "purple"
+        "coronation"
+    ],
+    "philosopher": [
+        "philosopher",
+        "philosophy",
+        "aristotle",
+        "immanuel kant",
+        "scholar",
+        "pythagoras",
+        "nietzsche",
+        "naturalist",
+        "plato",
+        "theology"
     ],
     "country": [
+        "country",
         "nation",
         "state",
         "land",
@@ -92,10 +116,10 @@
         "homeland",
         "region",
         "united nations",
-        "quadrant",
-        "corner"
+        "quadrant"
     ],
     "city": [
+        "city",
         "metropolis",
         "town",
         "municipality",
@@ -104,10 +128,10 @@
         "municipal",
         "megalopolis",
         "civilization",
-        "village",
-        "downtown"
+        "village"
     ],
     "continent": [
+        "continent",
         "europe",
         "africa",
         "asia",
@@ -116,10 +140,10 @@
         "australia",
         "north america",
         "south america",
-        "australasia",
-        "landmass"
+        "australasia"
     ],
     "brand": [
+        "brand",
         "mark",
         "label",
         "trademark",
@@ -128,10 +152,10 @@
         "marketing",
         "blade",
         "trade name",
-        "stigmatize",
-        "hallmark"
+        "stigmatize"
     ],
     "software": [
+        "software",
         "computer program",
         "linux",
         "compiler",
@@ -140,10 +164,10 @@
         "program",
         "malware",
         "hardware",
-        "computing",
-        "computer"
+        "computing"
     ],
     "airplane": [
+        "airplane",
         "plane",
         "airliner",
         "propeller",
@@ -152,34 +176,22 @@
         "jet",
         "biplane",
         "aeroplane",
-        "aircraft",
-        "aviator"
+        "aircraft"
     ],
-    "food": [
-        "nutrition",
-        "rice",
-        "nutrient",
-        "beef",
-        "meat",
-        "provender",
-        "victuals",
-        "cooking",
-        "seafood",
-        "pabulum"
-    ],
-    "game": [
+    "recreation": [
+        "recreation",
         "play",
-        "computer game",
-        "tennis",
-        "baseball",
-        "gamey",
-        "pitch",
-        "competition",
-        "party game",
-        "pinball",
-        "card game"
+        "amusement",
+        "fun",
+        "diversion",
+        "leisure",
+        "pastime",
+        "game",
+        "entertainment",
+        "park"
     ],
     "vehicle": [
+        "vehicle",
         "bicycle",
         "motorcycle",
         "wheel",
@@ -188,22 +200,22 @@
         "bus",
         "automobile",
         "aircraft",
-        "wagon",
-        "train"
+        "wagon"
     ],
-    "federation": [
-        "confederation",
-        "organization",
-        "organisation",
-        "union",
-        "association",
-        "committee",
-        "constitution",
-        "establishment",
-        "confederacy",
-        "alliance"
+    "club": [
+        "club",
+        "bludgeon",
+        "golf club",
+        "nightclub",
+        "cudgel",
+        "truncheon",
+        "baton",
+        "gather",
+        "clubhouse",
+        "lodge"
     ],
     "institution": [
+        "institution",
         "establishment",
         "organization",
         "founding",
@@ -212,16 +224,16 @@
         "creation",
         "university",
         "academic",
-        "society",
-        "organisation"
+        "society"
     ],
     "sports team": [
+        "sports team",
         "team",
         "sport",
-        "lacrosse",
-        "squad"
+        "lacrosse"
     ],
     "political party": [
+        "political party",
         "conservative party",
         "republican party",
         "democracy",
@@ -230,22 +242,10 @@
         "kuomintang",
         "third party",
         "opposition",
-        "liberal party",
-        "war party"
-    ],
-    "education": [
-        "teaching",
-        "pedagogy",
-        "instruction",
-        "school",
-        "curriculum",
-        "learning",
-        "college",
-        "university",
-        "educational activity",
-        "didactics"
+        "liberal party"
     ],
     "company": [
+        "company",
         "business",
         "corporation",
         "subsidiary",
@@ -254,10 +254,10 @@
         "accompany",
         "unit",
         "fellowship",
-        "distributor",
-        "companionship"
+        "distributor"
     ],
     "government": [
+        "government",
         "governance",
         "administration",
         "politics",
@@ -266,10 +266,10 @@
         "state",
         "judiciary",
         "political science",
-        "authorities",
-        "regime"
+        "authorities"
     ],
     "army": [
+        "army",
         "military",
         "soldier",
         "militia",
@@ -278,10 +278,10 @@
         "war machine",
         "regular army",
         "air force",
-        "armed forces",
-        "corps"
+        "armed forces"
     ],
     "religion": [
+        "religion",
         "buddhism",
         "judaism",
         "faith",
@@ -290,26 +290,26 @@
         "hinduism",
         "cult",
         "belief",
-        "sikhism",
-        "atheism"
+        "sikhism"
     ],
     "sports league": [
+        "sports league",
         "tournament",
         "association football",
-        "conference",
-        "golf"
+        "conference"
     ],
     "mall": [
+        "mall",
         "shopping mall",
         "plaza",
         "shop",
         "strip mall",
         "center",
         "downtown",
-        "shopping",
-        "store"
+        "shopping"
     ],
     "school": [
+        "school",
         "education",
         "university",
         "academy",
@@ -318,10 +318,10 @@
         "classroom",
         "grammar school",
         "student",
-        "primary school",
-        "secondary school"
+        "primary school"
     ],
     "hospital": [
+        "hospital",
         "clinic",
         "outpatient",
         "patient",
@@ -330,10 +330,10 @@
         "psychiatric hospital",
         "surgery",
         "physician",
-        "infirmary",
-        "sanatorium"
+        "infirmary"
     ],
     "airport": [
+        "airport",
         "aerodrome",
         "hangar",
         "runway",
@@ -342,10 +342,22 @@
         "heliport",
         "airfield",
         "taxiway",
-        "control tower",
-        "hotel"
+        "control tower"
+    ],
+    "stadium": [
+        "stadium",
+        "arena",
+        "baseball",
+        "ballpark",
+        "dome",
+        "park",
+        "football",
+        "association football",
+        "coliseum",
+        "sport"
     ],
     "residence": [
+        "residence",
         "hall",
         "home",
         "house",
@@ -354,10 +366,10 @@
         "mansion",
         "apartment",
         "bedroom",
-        "domicile",
-        "address"
+        "domicile"
     ],
     "body of water": [
+        "body of water",
         "lake",
         "water",
         "ocean",
@@ -366,10 +378,10 @@
         "river",
         "puddle",
         "stream",
-        "waterfall",
-        "waterway"
+        "waterfall"
     ],
     "island": [
+        "island",
         "greenland",
         "continent",
         "australia",
@@ -378,10 +390,10 @@
         "singapore",
         "archipelago",
         "mainland",
-        "iceland",
-        "seychelles"
+        "iceland"
     ],
     "mountain": [
+        "mountain",
         "hill",
         "volcano",
         "mount",
@@ -390,10 +402,10 @@
         "mount everest",
         "orogeny",
         "mountainside",
-        "river",
-        "alpine"
+        "river"
     ],
     "park": [
+        "park",
         "playground",
         "recreation",
         "green",
@@ -402,10 +414,10 @@
         "garden",
         "national park",
         "stadium",
-        "grass",
-        "yard"
+        "grass"
     ],
     "movie": [
+        "movie",
         "film",
         "television",
         "movie projector",
@@ -414,10 +426,10 @@
         "cinema",
         "dvd",
         "movie theater",
-        "celluloid",
-        "screenplay"
+        "celluloid"
     ],
     "music": [
+        "music",
         "piano",
         "jazz",
         "sound",
@@ -426,10 +438,10 @@
         "song",
         "sheet music",
         "classical music",
-        "rhythm",
-        "harmony"
+        "rhythm"
     ],
     "painting": [
+        "painting",
         "pigment",
         "oil paint",
         "acrylic paint",
@@ -438,10 +450,10 @@
         "acrylic",
         "watercolor",
         "watercolour",
-        "latex",
-        "distemper"
+        "latex"
     ],
     "broadcast": [
+        "broadcast",
         "radio",
         "air",
         "television",
@@ -450,10 +462,10 @@
         "spread",
         "rebroadcast",
         "simulcast",
-        "publicize",
-        "cable television"
+        "publicize"
     ],
     "war": [
+        "war",
         "warfare",
         "battle",
         "conflict",
@@ -462,10 +474,10 @@
         "combat",
         "vietnam war",
         "genocide",
-        "state of war",
-        "civil war"
+        "state of war"
     ],
     "disaster": [
+        "disaster",
         "catastrophe",
         "calamity",
         "tragedy",
@@ -474,27 +486,15 @@
         "devastation",
         "earthquake",
         "hardship",
-        "cataclysm",
-        "hurricane"
-    ],
-    "election": [
-        "vote",
-        "reelection",
-        "legislature",
-        "referendum",
-        "ballot",
-        "poll",
-        "electoral",
-        "absentee ballot",
-        "general election",
-        "elect"
+        "cataclysm"
     ],
     "sporting events": [
+        "sporting events",
         "association football",
-        "rugby union",
-        "olympic games"
+        "rugby union"
     ],
     "festival": [
+        "festival",
         "holiday",
         "celebration",
         "fete",
@@ -503,10 +503,10 @@
         "gala",
         "jubilee",
         "event",
-        "oktoberfest",
-        "fiesta"
+        "oktoberfest"
     ],
     "language": [
+        "language",
         "speech",
         "dialect",
         "word",
@@ -515,10 +515,10 @@
         "sign language",
         "terminology",
         "syntax",
-        "linguistics",
-        "natural language"
+        "linguistics"
     ],
     "law": [
+        "law",
         "jurisprudence",
         "constitution",
         "state",
@@ -527,10 +527,10 @@
         "common law",
         "statute",
         "natural law",
-        "rule",
-        "legislation"
+        "rule"
     ],
     "award": [
+        "award",
         "prize",
         "trophy",
         "medal",
@@ -539,10 +539,10 @@
         "accolade",
         "honour",
         "nobel prize",
-        "excellence",
-        "emmy"
+        "excellence"
     ],
     "disease": [
+        "disease",
         "virus",
         "cancer",
         "syndrome",
@@ -551,10 +551,10 @@
         "illness",
         "infectious disease",
         "malaria",
-        "leprosy",
-        "malignancy"
+        "leprosy"
     ],
     "currency": [
+        "currency",
         "money",
         "dollar",
         "banknote",
@@ -563,7 +563,6 @@
         "franc",
         "medium of exchange",
         "paper money",
-        "cash",
-        "euro"
+        "cash"
     ]
 }

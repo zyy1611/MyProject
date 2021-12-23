@@ -60,7 +60,7 @@ if __name__ == "__main__":
         dic = fr
         json_data = json.load(dic)
         for obj in json_data:
-            val = []
+            val = [obj]
             num = min(range_up, math.ceil(json_data[obj][0]["score"]))
             for word_data in json_data[obj]:
                 word = word_data["word"]
