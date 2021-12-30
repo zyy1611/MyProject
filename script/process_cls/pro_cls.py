@@ -46,7 +46,7 @@ def prepare(result):
 
 
 if __name__ == "__main__":
-    with open("./cls_labels.txt", 'r', encoding='utf8') as fr:
+    with open("./cls_labels_2.txt", 'r', encoding='utf8') as fr:
         name = []
         for line in fr:
             str = line.split(",")
@@ -55,7 +55,7 @@ if __name__ == "__main__":
         prepare(name)
     cls_tab = {}
 
-    range_up = 10
+    range_up = 15
     with open("./all_cls_relation.json", 'r', encoding='utf8') as fr:
         dic = fr
         json_data = json.load(dic)
