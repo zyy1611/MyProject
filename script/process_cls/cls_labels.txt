@@ -1,10 +1,10 @@
-sportsman,musician,performer,leader,businessman,royal,philosopher
+sportsman,singer,performer,leader,businessman,royal,philosopher
 country,city
 brand,airplane,vehicle
-club,sports team,political party,company,government,army
+club,sports team,company,government,army
 religion,politics
 mall,university,hospital,airport,stadium,government
-residence,body of water,island,mountain,park
-movie,music,broadcast
+body of water,island,mountain,park
+movie,song,broadcast,video game
 war,disaster,sporting events,festival
 language,award,disease,currency
