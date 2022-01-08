@@ -7,11 +7,7 @@ from openprompt.plms import load_plm
 import torch
 import json
 
-classes = ['sportsman', 'singer', 'performer', 'leader', 'businessman', 'royal', 'philosopher', 'country', 'city',
-           'brand', 'airplane', 'vehicle', 'club', 'sports team', 'company', 'government', 'army', 'religion',
-           'politics', 'mall', 'university', 'hospital', 'airport', 'stadium', 'body of water', 'island', 'mountain',
-           'park', 'movie', 'song', 'broadcast', 'video game', 'war', 'disaster', 'sporting events', 'festival',
-           'language', 'award', 'disease', 'currency']
+classes = ['person', 'organization', 'location', 'buildings', 'arts', 'product', 'event', "other"]
 
 data_set = "fr_en"
 language_type = ["1", "2"]
@@ -23,409 +19,91 @@ for lt in language_type:
     dataset = []
     pos = 0
     for obj in json_data:
+        des_str = json_data[obj]["description"].replace(json_data[obj]["ent_name"],
+                                                        "???")
+        point_pos = des_str.find(".")
+        des_str_front = des_str[:point_pos + 1]
+        des_str_tail = des_str[point_pos + 1:]
+
         dataset.append(InputExample(guid=0, label=int(obj),
-                                    meta={"sentence": json_data[obj]["description"].replace(json_data[obj]["ent_name"],
-                                                                                            "entity"),
-                                          "ent": "entity"}))
+
+                                    meta={"des_str_front": des_str_front, "des_str_tail": des_str_tail,
+                                          "ent": "???"}))
         pos = pos + 1
     plm, tokenizer, model_config, WrapperClass = load_plm("bert", "bert-base-uncased")
     promptTemplate = ManualTemplate(
-        text='{"meta":"sentence"}.The type of {"meta": "ent"} is {"mask"}',
+        text='{"meta":"des_str_front"}.{"meta": "ent"} is {"mask"}.{"meta":"des_str_tail"}',
         tokenizer=tokenizer,
     )
 
     promptVerbalizer = ManualVerbalizer(
         classes=classes,
         label_words={
-            "sportsman": [
+            "person": [
                 "sportsman",
-                "sport",
-                "sportswoman",
-                "athlete",
-                "amateur",
-                "sportsperson",
-                "footballer",
-                "jock"
-            ],
-            "singer": [
                 "singer",
-                "song",
-                "vocalist",
-                "opera",
-                "soprano",
-                "vocal range",
-                "jazz"
-            ],
-            "performer": [
-                "performer",
                 "actor",
-                "dance",
-                "dancer",
-                "musician",
-                "comedian",
-                "entertainer",
-                "artiste"
-            ],
-            "leader": [
-                "leader",
-                "chief",
-                "chieftain",
                 "politician",
-                "goal",
-                "leadership",
-                "head",
-                "commander"
-            ],
-            "businessman": [
-                "businessman",
-                "entrepreneur",
-                "merchant",
-                "business",
-                "businessperson",
-                "tycoon",
-                "industrialist",
-                "magnate"
-            ],
-            "royal": [
+                "worker",
                 "royal",
-                "imperial",
-                "noble",
-                "king",
-                "regal",
-                "queen",
-                "monarch",
-                "prince"
+                "minister",
+                "human",
+                "cosmonaut"
             ],
-            "philosopher": [
-                "philosopher",
-                "philosophy",
-                "aristotle",
-                "immanuel kant",
-                "scholar",
-                "pythagoras",
-                "nietzsche",
-                "naturalist"
-            ],
-            "country": [
-                "country",
-                "nation",
-                "state",
-                "land",
-                "fatherland",
-                "malta",
-                "homeland",
-                "region"
-            ],
-            "city": [
-                "city",
-                "metropolis",
-                "town",
-                "municipality",
-                "urban",
-                "suburb",
-                "municipal",
-                "megalopolis"
-            ],
-            "brand": [
-                "brand",
-                "mark",
-                "label",
-                "trademark",
-                "advertising",
-                "logo",
-                "marketing",
-                "blade"
-            ],
-            "airplane": [
-                "airplane",
-                "plane",
-                "airliner",
-                "propeller",
-                "monoplane",
-                "fuselage",
-                "jet",
-                "biplane"
-            ],
-            "vehicle": [
-                "vehicle",
-                "bicycle",
-                "motorcycle",
-                "wheel",
-                "truck",
-                "car",
-                "bus",
-                "automobile"
-            ],
-            "club": [
-                "club",
-                "bludgeon",
-                "golf club",
-                "nightclub",
-                "cudgel",
-                "truncheon",
-                "baton",
-                "gather"
-            ],
-            "sports team": [
-                "sports team",
-                "team",
-                "sport",
-                "lacrosse"
-            ],
-            "company": [
-                "company",
-                "business",
-                "corporation",
-                "subsidiary",
-                "companion",
-                "troupe",
-                "accompany",
-                "unit"
-            ],
-            "government": [
-                "government",
-                "governance",
-                "administration",
-                "politics",
-                "democracy",
-                "governing",
-                "state",
-                "judiciary"
-            ],
-            "army": [
+            "organization": [
+                "organization",
+                "establishment",
+                "federation",
+                "institution",
+                "union",
                 "army",
-                "military",
-                "soldier",
-                "militia",
-                "conscription",
-                "infantry",
-                "war machine",
-                "regular army"
+                "company",
+                "sports team"
             ],
-            "religion": [
-                "religion",
-                "buddhism",
-                "judaism",
-                "faith",
-                "christianity",
-                "islam",
-                "hinduism",
-                "cult"
-            ],
-            "politics": [
-                "politics",
-                "government",
-                "diplomatic",
-                "law",
-                "political science",
-                "aristotle",
-                "politics",
-                "diplomatical"
-            ],
-            "mall": [
-                "mall",
-                "shopping mall",
-                "plaza",
-                "shop",
-                "strip mall",
-                "center",
-                "downtown",
-                "shopping"
-            ],
-            "university": [
-                "university",
-                "college",
-                "educational institution",
-                "academia",
-                "campus",
-                "stanford",
-                "harvard",
-                "sorbonne"
-            ],
-            "hospital": [
-                "hospital",
-                "clinic",
-                "outpatient",
-                "patient",
-                "surgeon",
-                "nurse",
-                "psychiatric hospital",
-                "surgery"
-            ],
-            "airport": [
-                "airport",
-                "aerodrome",
-                "hangar",
-                "runway",
-                "airport terminal",
-                "landing",
-                "heliport",
-                "airfield"
-            ],
-            "stadium": [
-                "stadium",
-                "arena",
-                "baseball",
-                "ballpark",
-                "dome",
-                "park",
-                "football",
-                "association football"
-            ],
-            "body of water": [
-                "body of water",
-                "lake",
-                "water",
-                "ocean",
-                "sea",
-                "inlet",
-                "river",
-                "puddle"
-            ],
-            "island": [
-                "island",
-                "greenland",
-                "continent",
-                "australia",
-                "borneo",
-                "madagascar",
-                "singapore",
-                "archipelago"
-            ],
-            "mountain": [
+            "location": [
+                "location",
+                "political party",
+                "country",
+                "region",
+                "placement",
                 "mountain",
-                "hill",
-                "volcano",
-                "mount",
-                "glacier",
-                "magma",
-                "mount everest",
-                "orogeny"
+                "body of water",
+                "city",
+                "island",
+                "park"
             ],
-            "park": [
-                "park",
-                "playground",
-                "recreation",
-                "green",
-                "ballpark",
-                "tract",
-                "garden",
-                "national park"
+            "buildings": [
+                "buildings",
+                "school",
+                "hospital",
+                "airport",
+                "roof",
+                "stadium",
+                "architecture",
+                "government"
             ],
-            "movie": [
+            "arts": [
                 "movie",
-                "film",
-                "television",
-                "movie projector",
-                "soundtrack",
-                "picture",
-                "cinema",
-                "dvd"
-            ],
-            "song": [
-                "song",
-                "ballad",
-                "lullaby",
-                "folk song",
-                "aria",
                 "music",
-                "melody",
-                "lyric"
-            ],
-            "broadcast": [
                 "broadcast",
-                "radio",
-                "air",
-                "television",
-                "telecast",
-                "circulate",
-                "spread",
-                "rebroadcast"
+                "video game"
             ],
-            "video game": [
-                "video game",
-                "computer game",
-                "game",
-                "arcade game",
-                "electronic game",
-                "video game console",
-                "xbox one",
-                "playstation 4"
+            "product": [
+                "brand",
+                "airplane",
+                "car",
+                "train"
             ],
-            "war": [
+            "event": [
                 "war",
-                "warfare",
-                "battle",
-                "conflict",
-                "fight",
-                "struggle",
-                "combat",
-                "vietnam war"
-            ],
-            "disaster": [
                 "disaster",
-                "catastrophe",
-                "calamity",
-                "tragedy",
-                "tsunami",
-                "famine",
-                "devastation",
-                "earthquake"
-            ],
-            "sporting events": [
-                "sporting events",
-                "association football",
-                "rugby union"
-            ],
-            "festival": [
+                "competition",
                 "festival",
-                "holiday",
-                "celebration",
-                "fete",
-                "christmas",
-                "carnival",
-                "gala",
-                "jubilee"
             ],
-            "language": [
+            "other": [
                 "language",
-                "speech",
-                "dialect",
-                "word",
-                "words",
-                "vocabulary",
-                "sign language",
-                "terminology"
-            ],
-            "award": [
                 "award",
-                "prize",
-                "trophy",
-                "medal",
-                "honor",
-                "grant",
-                "accolade",
-                "honour"
-            ],
-            "disease": [
-                "disease",
-                "virus",
-                "cancer",
-                "syndrome",
-                "infection",
-                "symptom",
-                "illness",
-                "infectious disease"
-            ],
-            "currency": [
-                "currency",
-                "money",
-                "dollar",
-                "banknote",
-                "coin",
-                "legal tender",
-                "franc",
-                "medium of exchange"
+                "disease"
             ]
         },
         tokenizer=tokenizer,
