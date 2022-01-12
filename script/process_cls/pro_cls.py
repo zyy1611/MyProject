@@ -46,7 +46,7 @@ def prepare(result):
 
 
 if __name__ == "__main__":
-    with open("./cls_labels_2.txt", 'r', encoding='utf8') as fr:
+    with open("./cls_labels.txt", 'r', encoding='utf8') as fr:
         name = []
         for line in fr:
             str = line.split(",")

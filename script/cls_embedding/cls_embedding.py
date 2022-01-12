@@ -5,7 +5,7 @@ import json
 embeddings_dict = {}
 cls = []
 cls_emdedding = {}
-with open("../process_cls/cls_labels_2.txt", 'r', encoding='utf8') as fr:
+with open("../process_cls/cls_labels.txt", 'r', encoding='utf8') as fr:
     for line in fr:
         str = line.split(",")
         for obj in str:

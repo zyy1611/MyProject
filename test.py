@@ -7,7 +7,10 @@ from openprompt.plms import load_plm
 import torch
 import json
 
-classes = ['person', 'organization', 'location', 'buildings', 'arts', 'product', 'event', "other"]
+classes = ['sportsman', 'singer', 'actor', 'politician', 'royal', 'cosmonaut', 'country', 'city', 'brand', 'airplane',
+           'car', 'train', 'club', 'sports team', 'company', 'army', 'mall', 'school', 'hospital', 'airport', 'stadium',
+           'government', 'body of water', 'mountain', 'park', 'island', 'movie', 'music', 'broadcast', 'video game',
+           'war', 'disaster', 'competition', 'festival', 'language', 'award', 'disease']
 
 data_set = "fr_en"
 language_type = ["1", "2"]
@@ -39,71 +42,370 @@ for lt in language_type:
     promptVerbalizer = ManualVerbalizer(
         classes=classes,
         label_words={
-            "person": [
+            "sportsman": [
                 "sportsman",
+                "sport",
+                "sportswoman",
+                "athlete",
+                "amateur",
+                "sportsperson",
+                "footballer",
+                "jock"
+            ],
+            "singer": [
                 "singer",
-                "actor",
-                "politician",
-                "worker",
-                "royal",
-                "minister",
-                "human",
-                "cosmonaut"
-            ],
-            "organization": [
-                "organization",
-                "establishment",
-                "federation",
-                "institution",
-                "union",
-                "army",
-                "company",
-                "sports team"
-            ],
-            "location": [
-                "location",
-                "political party",
-                "country",
-                "region",
-                "placement",
-                "mountain",
-                "body of water",
-                "city",
-                "island",
-                "park"
-            ],
-            "buildings": [
-                "buildings",
-                "school",
-                "hospital",
-                "airport",
-                "roof",
-                "stadium",
-                "architecture",
-                "government"
-            ],
-            "arts": [
-                "movie",
+                "song",
+                "vocalist",
+                "opera",
+                "soprano",
+                "vocal range",
                 "music",
-                "broadcast",
-                "video game"
+                "jazz"
             ],
-            "product": [
+            "actor": [
+                "actor",
+                "comedy",
+                "barrymore",
+                "mime",
+                "actress",
+                "drama",
+                "thespian",
+                "doer"
+            ],
+            "politician": [
+                "politician",
+                "leader",
+                "minister",
+                "democrat",
+                "candidate",
+                "statesman",
+                "legislator"
+            ],
+            "royal": [
+                "royal",
+                "imperial",
+                "noble",
+                "king",
+                "regal",
+                "queen",
+                "monarch",
+                "prince"
+            ],
+            "cosmonaut": [
+                "cosmonaut",
+                "yuri gagarin",
+                "astronaut",
+                "valentina tereshkova",
+                "soviet union",
+                "spaceman",
+                "spacecraft",
+                "gagarin"
+            ],
+            "country": [
+                "country",
+                "nation",
+                "state",
+                "land",
+                "fatherland",
+                "malta",
+                "homeland",
+                "region"
+            ],
+            "city": [
+                "city",
+                "metropolis",
+                "town",
+                "municipality",
+                "urban",
+                "suburb",
+                "municipal",
+                "megalopolis"
+            ],
+            "brand": [
                 "brand",
+                "mark",
+                "label",
+                "trademark",
+                "advertising",
+                "logo",
+                "marketing",
+                "blade"
+            ],
+            "airplane": [
                 "airplane",
+                "plane",
+                "airliner",
+                "propeller",
+                "monoplane",
+                "fuselage",
+                "jet",
+                "biplane"
+            ],
+            "car": [
                 "car",
-                "train"
+                "bus",
+                "motor vehicle",
+                "wheel",
+                "automobile",
+                "auto",
+                "minivan",
+                "suv"
             ],
-            "event": [
+            "train": [
+                "train",
+                "prepare",
+                "locomotive",
+                "develop",
+                "educate",
+                "groom",
+                "railcar",
+                "freight train"
+            ],
+            "club": [
+                "club",
+                "bludgeon",
+                "golf club",
+                "nightclub",
+                "cudgel",
+                "truncheon",
+                "baton",
+                "gather"
+            ],
+            "sports team": [
+                "sports team",
+                "team",
+                "sport",
+                "lacrosse"
+            ],
+            "company": [
+                "company",
+                "business",
+                "corporation",
+                "subsidiary",
+                "companion",
+                "troupe",
+                "accompany",
+                "unit"
+            ],
+            "army": [
+                "army",
+                "military",
+                "soldier",
+                "militia",
+                "conscription",
+                "infantry",
+                "war machine",
+                "regular army"
+            ],
+            "mall": [
+                "mall",
+                "shopping mall",
+                "plaza",
+                "shop",
+                "strip mall",
+                "center",
+                "downtown",
+                "shopping"
+            ],
+            "school": [
+                "school",
+                "education",
+                "university",
+                "academy",
+                "college",
+                "teacher",
+                "classroom",
+                "grammar school"
+            ],
+            "hospital": [
+                "hospital",
+                "clinic",
+                "outpatient",
+                "patient",
+                "surgeon",
+                "nurse",
+                "psychiatric hospital",
+                "surgery"
+            ],
+            "airport": [
+                "airport",
+                "aerodrome",
+                "hangar",
+                "runway",
+                "airport terminal",
+                "landing",
+                "heliport",
+                "airfield"
+            ],
+            "stadium": [
+                "stadium",
+                "arena",
+                "baseball",
+                "ballpark",
+                "dome",
+                "park",
+                "football",
+                "association football"
+            ],
+            "government": [
+                "government",
+                "governance",
+                "administration",
+                "politics",
+                "democracy",
+                "governing",
+                "state",
+                "judiciary"
+            ],
+            "body of water": [
+                "body of water",
+                "lake",
+                "water",
+                "ocean",
+                "sea",
+                "inlet",
+                "river",
+                "puddle"
+            ],
+            "mountain": [
+                "mountain",
+                "hill",
+                "volcano",
+                "mount",
+                "glacier",
+                "magma",
+                "mount everest",
+                "orogeny"
+            ],
+            "park": [
+                "park",
+                "playground",
+                "recreation",
+                "green",
+                "ballpark",
+                "tract",
+                "garden",
+                "national park"
+            ],
+            "island": [
+                "island",
+                "greenland",
+                "continent",
+                "australia",
+                "borneo",
+                "madagascar",
+                "singapore",
+                "archipelago"
+            ],
+            "movie": [
+                "movie",
+                "film",
+                "television",
+                "movie projector",
+                "soundtrack",
+                "picture",
+                "cinema",
+                "dvd"
+            ],
+            "music": [
+                "music",
+                "piano",
+                "jazz",
+                "sound",
+                "melody",
+                "guitar",
+                "song",
+                "sheet music"
+            ],
+            "broadcast": [
+                "broadcast",
+                "radio",
+                "air",
+                "television",
+                "telecast",
+                "circulate",
+                "spread",
+                "rebroadcast"
+            ],
+            "video game": [
+                "video game",
+                "computer game",
+                "game",
+                "arcade game",
+                "electronic game",
+                "video game console",
+                "xbox one",
+                "playstation 4"
+            ],
+            "war": [
                 "war",
-                "disaster",
-                "competition",
-                "festival",
+                "warfare",
+                "battle",
+                "conflict",
+                "fight",
+                "struggle",
+                "combat",
+                "vietnam war"
             ],
-            "other": [
+            "disaster": [
+                "disaster",
+                "catastrophe",
+                "calamity",
+                "tragedy",
+                "tsunami",
+                "famine",
+                "devastation",
+                "earthquake"
+            ],
+            "competition": [
+                "competition",
+                "contest",
+                "tournament",
+                "competitiveness",
+                "championship",
+                "race",
+                "rivalry",
+                "sport"
+            ],
+            "festival": [
+                "festival",
+                "holiday",
+                "celebration",
+                "fete",
+                "christmas",
+                "carnival",
+                "gala",
+                "jubilee"
+            ],
+            "language": [
                 "language",
+                "speech",
+                "dialect",
+                "word",
+                "words",
+                "vocabulary",
+                "sign language",
+                "terminology"
+            ],
+            "award": [
                 "award",
-                "disease"
+                "prize",
+                "trophy",
+                "medal",
+                "honor",
+                "grant",
+                "accolade",
+                "honour"
+            ],
+            "disease": [
+                "disease",
+                "virus",
+                "cancer",
+                "syndrome",
+                "infection",
+                "symptom",
+                "illness",
+                "infectious disease"
             ]
         },
         tokenizer=tokenizer,
