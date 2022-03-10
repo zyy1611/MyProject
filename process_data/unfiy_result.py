@@ -4,7 +4,17 @@ import json
 def type_count():
     cnt_1 = {}
     cnt_2 = {}
-    with open("./fr_en/1_typing_result.json", 'r', encoding='utf8') as fr:
+    # with open("./fr_en/hard_prompt_typing_result.json", 'r', encoding='utf8') as fr:
+    #     json_data = json.load(fr)
+    #     print(json_data["10989"])
+    #     for obj in json_data:
+    #         if cnt_1.get(json_data[obj]) is None:
+    #             cnt_1[json_data[obj]] = 1
+    #         cnt_1[json_data[obj]] = cnt_1[json_data[obj]] + 1
+    #     cnt_1 = sorted(cnt_1.items(), key=lambda x: x[1], reverse=True)
+    # print(cnt_1)
+    # print(len(cnt_1))
+    with open("./fr_en_v1/fr_typing_result.json", 'r', encoding='utf8') as fr:
         json_data = json.load(fr)
         for obj in json_data:
             if cnt_1.get(json_data[obj]) is None:
@@ -12,7 +22,7 @@ def type_count():
             cnt_1[json_data[obj]] = cnt_1[json_data[obj]] + 1
         cnt_1 = sorted(cnt_1.items(), key=lambda x: x[1], reverse=True)
     print(cnt_1)
-    with open("./fr_en/2_typing_result.json", 'r', encoding='utf8') as fr:
+    with open("./fr_en_v1/en_typing_result.json", 'r', encoding='utf8') as fr:
         json_data = json.load(fr)
         for obj in json_data:
             if cnt_2.get(json_data[obj]) is None:
@@ -23,17 +33,18 @@ def type_count():
 
 
 def hit_compute():
-    with open("../data/fr_en/ref_ent_ids", 'r', encoding='utf8') as fr:
+    with open("../data/fr_en_v1/ref_ent_ids", 'r', encoding='utf8') as fr:
         ret = []
         for line in fr:
             ret.append(line[:-1].split("\t"))
-        print(ret)
-        with open("./fr_en/1_typing_result.json", 'r', encoding='utf8') as fr:
+        with open("./fr_en_v1/fr_typing_result.json", 'r', encoding='utf8') as fr:
             tab = json.load(fr)
-        with open("./fr_en/2_typing_result.json", 'r', encoding='utf8') as fr:
+        with open("./fr_en_v1/en_typing_result.json", 'r', encoding='utf8') as fr:
             json_data = json.load(fr)
             for obj in json_data:
                 tab[obj] = json_data[obj]
+        # with open("./fr_en/hard_prompt_typing_result.json", 'r', encoding='utf8') as fr:
+        #     tab = json.load(fr)
         print(len(tab))
         cls_1 = {}
         cls_2 = {}
@@ -59,5 +70,5 @@ def hit_compute():
 
 
 if __name__ == "__main__":
-    # type_count()
+    type_count()
     hit_compute()

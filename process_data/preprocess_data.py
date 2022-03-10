@@ -194,7 +194,7 @@ def generate_comment(ent_tab, dataset):
                                  "description": clean(th[1].replace(del_sub, ent_tab[th[0]]))}
     print(len(result))
     try:
-        with open("./{}_en/comment_1_description.json".format(dataset), 'w',
+        with open("./{}_en/fr_comment_description.json".format(dataset), 'w',
                   encoding='utf-8') as fw:
             json.dump(result, fw, ensure_ascii=False, indent=4, sort_keys=False)
             fw.close()
@@ -212,7 +212,7 @@ def process_des(dataset):
 
 
 def process_eng_extra(dataset):
-    with open("./{}/comment_2_description.json".format(dataset), 'r', encoding='utf-8') as fr:
+    with open("./{}/en_comment_description.json".format(dataset), 'r', encoding='utf-8') as fr:
         json_data = json.load(fr)
         print(len(json_data))
     ent_name = get_name(dataset, 2)
@@ -233,7 +233,7 @@ def process_eng_extra(dataset):
         print(obj, json_data[obj])
     print(len(json_data))
     try:
-        with open("./{}/comment_2_description.json".format(dataset), 'w',
+        with open("./{}/en_comment_description.json".format(dataset), 'w',
                   encoding='utf-8') as fw:
             json.dump(json_data, fw, ensure_ascii=False, indent=4, sort_keys=False)
             fw.close()
@@ -242,7 +242,7 @@ def process_eng_extra(dataset):
 
 
 def process_fr_extra(dataset):
-    with open("./{}/comment_1_description.json".format(dataset), 'r',
+    with open("./{}/fr_comment_description.json".format(dataset), 'r',
               encoding='utf-8') as fr:
         result = json.load(fr)
         print(len(result))
@@ -277,7 +277,7 @@ def process_fr_extra(dataset):
     #         result[obj] = {"ent_name": ent_tab[obj],
     #                          "description": clean(extra_fr[obj].replace(del_sub, ent_tab[obj]))}
     # try:
-    #     with open("./{}/comment_1_description.json".format(dataset), 'w',
+    #     with open("./{}/fr_comment_description.json".format(dataset), 'w',
     #               encoding='utf-8') as fw:
     #         json.dump(result, fw, ensure_ascii=False, indent=4, sort_keys=False)
     #         fw.close()

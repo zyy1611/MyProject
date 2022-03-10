@@ -1,0 +1,1811 @@
+{
+    "soccer player": [
+        "player",
+        "coach",
+        "teacher",
+        "footballer",
+        "athlete",
+        "girl",
+        "manager",
+        "football"
+    ],
+    "singer": [
+        "songwriter",
+        "actress",
+        "actor",
+        "composer",
+        "guitarist",
+        "musician",
+        "band",
+        "dancer"
+    ],
+    "library": [
+        "museum",
+        "school",
+        "cafeteria",
+        "office",
+        "library",
+        "auditorium",
+        "college",
+        "science"
+    ],
+    "political party": [
+        "party",
+        "society",
+        "ideology",
+        "religion",
+        "government",
+        "politics",
+        "organization",
+        "state"
+    ],
+    "department": [
+        "department",
+        "school",
+        "class",
+        "division",
+        "program",
+        "office",
+        "unit",
+        "organization"
+    ],
+    "economist": [
+        "economist",
+        "engineer",
+        "sociologist",
+        "politician",
+        "philosopher",
+        "lawyer",
+        "academic",
+        "mathematician"
+    ],
+    "prime minister": [
+        "president",
+        "minister",
+        "cabinet",
+        "governor",
+        "government",
+        "parliament",
+        "speaker",
+        "senator"
+    ],
+    "election": [
+        "election",
+        "elections",
+        "voting",
+        "reelection",
+        "relegation",
+        "government",
+        "nomination",
+        "runoff"
+    ],
+    "decoration": [
+        "decoration",
+        "furniture",
+        "lighting",
+        "design",
+        "furnishings",
+        "appearance",
+        "layout",
+        "details"
+    ],
+    "historic building": [
+        "site",
+        "architecture",
+        "structure",
+        "cemetery",
+        "landscape",
+        "location",
+        "property",
+        "district"
+    ],
+    "soccer  manager": [
+        "all",
+        "manager",
+        "coach",
+        "teacher",
+        "actor",
+        "player",
+        "businessman",
+        "musician"
+    ],
+    "software": [
+        "hardware",
+        "technology",
+        "system",
+        "systems",
+        "software",
+        "people",
+        "services",
+        "data"
+    ],
+    "chancellor": [
+        "chancellor",
+        "president",
+        "dean",
+        "ceo",
+        "administrator",
+        "mayor",
+        "secretary",
+        "professor"
+    ],
+    "tennis  player": [
+        "coach",
+        "all",
+        "actor",
+        "sport",
+        "actress",
+        "teacher",
+        "musician",
+        "politician"
+    ],
+    "football match": [
+        "football",
+        "match",
+        "game",
+        "school",
+        "team",
+        "goal",
+        "sport",
+        "club"
+    ],
+    "scientist": [
+        "scientist",
+        "engineer",
+        "teacher",
+        "inventor",
+        "doctor",
+        "artist",
+        "writer",
+        "philosopher"
+    ],
+    "motorsport racer": [
+        "driver",
+        "mechanic",
+        "businessman",
+        "player",
+        "sportsman",
+        "racer",
+        "coach",
+        "musician"
+    ],
+    "womens tennis association tournament": [
+        "results",
+        "table",
+        "and",
+        "format",
+        "the",
+        "rules",
+        "-",
+        "points"
+    ],
+    "village": [
+        "village",
+        "town",
+        "city",
+        "community",
+        "population",
+        "district",
+        "family",
+        "municipality"
+    ],
+    "athlete": [
+        "athlete",
+        "coach",
+        "team",
+        "sport",
+        "player",
+        "student",
+        "person",
+        "class"
+    ],
+    "painter": [
+        "artist",
+        "sculptor",
+        "poet",
+        "photographer",
+        "writer",
+        "model",
+        "painter",
+        "musician"
+    ],
+    "royalty": [
+        "nobility",
+        "royalty",
+        "aristocracy",
+        "nobles",
+        "power",
+        "politics",
+        "government",
+        "kings"
+    ],
+    "politician": [
+        "businessman",
+        "lawyer",
+        "politician",
+        "journalist",
+        "teacher",
+        "actor",
+        "writer",
+        "business"
+    ],
+    "government agency": [
+        "agency",
+        "department",
+        "state",
+        "government",
+        "organization",
+        "office",
+        "service",
+        "business"
+    ],
+    "university": [
+        "college",
+        "university",
+        "school",
+        "government",
+        "city",
+        "industry",
+        "community",
+        "state"
+    ],
+    "country": [
+        "country",
+        "state",
+        "nation",
+        "city",
+        "person",
+        "region",
+        "people",
+        "culture"
+    ],
+    "station": [
+        "station",
+        "location",
+        "platform",
+        "track",
+        "route",
+        "distance",
+        "address",
+        "number"
+    ],
+    "tennis tournament": [
+        "club",
+        "football",
+        "game",
+        "tournament",
+        "dance",
+        "competition",
+        "games",
+        "match"
+    ],
+    "gymnast": [
+        "gymnast",
+        "athlete",
+        "dancer",
+        "person",
+        "player",
+        "coach",
+        "individual",
+        "diver"
+    ],
+    "record label": [
+        "band",
+        "artist",
+        "label",
+        "publisher",
+        "manager",
+        "company",
+        "organization",
+        "management"
+    ],
+    "chess player": [
+        "player",
+        "teacher",
+        "actor",
+        "coach",
+        "person",
+        "author",
+        "student",
+        "writer"
+    ],
+    "painting": [
+        "sculpture",
+        "drawing",
+        "music",
+        "writing",
+        "poetry",
+        "painting",
+        "literature",
+        "art"
+    ],
+    "play": [
+        "play",
+        "scoring",
+        "win",
+        "goal",
+        "practice",
+        "score",
+        "attack",
+        "strategy"
+    ],
+    "soccer league": [
+        "soccer",
+        "league",
+        "football",
+        "baseball",
+        "cup",
+        "nfl",
+        "basketball",
+        "bundesliga"
+    ],
+    "old territory": [
+        "state",
+        "territory",
+        "country",
+        "frontier",
+        "land",
+        "people",
+        "town",
+        "city"
+    ],
+    "information appliance": [
+        "photography",
+        "smartphone",
+        "digital"
+    ],
+    "music festival": [
+        "festival",
+        "school",
+        "club",
+        "dance",
+        "exhibition",
+        "concert",
+        "event",
+        "fair"
+    ],
+    "track list": [
+        "personnel",
+        "lineup",
+        "title",
+        "artwork",
+        "chart",
+        "credits",
+        "schedule",
+        "layout"
+    ],
+    "prefecture": [
+        "city",
+        "district",
+        "county",
+        "province",
+        "town",
+        "region",
+        "municipality",
+        "prefecture"
+    ],
+    "ice hockey player": [
+        "coach",
+        "athlete",
+        "teacher",
+        "player",
+        "manager",
+        "driver",
+        "model",
+        "actor"
+    ],
+    "overseas department": [
+        "department",
+        "office",
+        "agency",
+        "service",
+        "mission",
+        "division",
+        "embassy",
+        "ministry"
+    ],
+    "formula one racer": [
+        "driver",
+        "drivers",
+        "nascar",
+        "businessman",
+        "car",
+        "manufacturer",
+        "team",
+        "sportsman"
+    ],
+    "building": [
+        "design",
+        "construction",
+        "organization",
+        "building",
+        "architecture",
+        "environment",
+        "structure",
+        "technology"
+    ],
+    "architectural structure": [
+        "design",
+        "layout",
+        "style",
+        "structure",
+        "architecture",
+        "construction",
+        "function",
+        "materials"
+    ],
+    "governmental administrative region": [
+        "district",
+        "city",
+        "state",
+        "country",
+        "region",
+        "province",
+        "county",
+        "territory"
+    ],
+    "fictional character": [
+        "story",
+        "actor",
+        "plot",
+        "character",
+        "author",
+        "model",
+        "person",
+        "setting"
+    ],
+    "airport": [
+        "city",
+        "airport",
+        "town",
+        "train",
+        "traffic",
+        "railway",
+        "location",
+        "highway"
+    ],
+    "deputy": [
+        "deputy",
+        "mayor",
+        "sheriff",
+        "chief",
+        "minister",
+        "director",
+        "assistant",
+        "secretary"
+    ],
+    "volcano": [
+        "volcano",
+        "ocean",
+        "sea",
+        "planet",
+        "river",
+        "earth",
+        "water",
+        "fire"
+    ],
+    "comics character": [
+        "story",
+        "character",
+        "plot",
+        "name",
+        "actor",
+        "personality",
+        "characters",
+        "title"
+    ],
+    "comics creator": [
+        "writer",
+        "artist",
+        "author",
+        "editor",
+        "publisher",
+        "creator",
+        "actor",
+        "director"
+    ],
+    "school": [
+        "life",
+        "school",
+        "class",
+        "home",
+        "college",
+        "work",
+        "church",
+        "community"
+    ],
+    "actor": [
+        "director",
+        "actor",
+        "actress",
+        "model",
+        "singer",
+        "writer",
+        "character",
+        "producer"
+    ],
+    "sports event": [
+        "competition",
+        "event",
+        "game",
+        "sport",
+        "school",
+        "performance",
+        "class",
+        "program"
+    ],
+    "baseball team": [
+        "football",
+        "school",
+        "team",
+        "basketball",
+        "softball",
+        "club",
+        "band",
+        "soccer"
+    ],
+    "company": [
+        "company",
+        "business",
+        "organization",
+        "person",
+        "people",
+        "family",
+        "school",
+        "job"
+    ],
+    "broadcast network": [
+        "network",
+        "channel",
+        "station",
+        "cable",
+        "program",
+        "broadcast",
+        "audience",
+        "programming"
+    ],
+    "sea": [
+        "air",
+        "land",
+        "sky",
+        "earth",
+        "sea",
+        "ocean",
+        "river",
+        "wind"
+    ],
+    "ice hockey league": [
+        "nhl",
+        "league",
+        "iihf",
+        "hockey",
+        "olympics",
+        "cup",
+        "euroleague",
+        "conference"
+    ],
+    "book": [
+        "book",
+        "page",
+        "text",
+        "paper",
+        "letter",
+        "picture",
+        "person",
+        "journal"
+    ],
+    "wrestler": [
+        "wrestler",
+        "player",
+        "boxer",
+        "referee",
+        "sumo",
+        "athlete",
+        "fighter",
+        "student"
+    ],
+    "weapon": [
+        "weapon",
+        "armor",
+        "crew",
+        "shield",
+        "equipment",
+        "training",
+        "tactics",
+        "ammunition"
+    ],
+    "railway line": [
+        "station",
+        "road",
+        "location",
+        "traffic",
+        "highway",
+        "bridge",
+        "route",
+        "platform"
+    ],
+    "journalist": [
+        "writer",
+        "editor",
+        "author",
+        "reporter",
+        "journalist",
+        "photographer",
+        "publisher",
+        "politician"
+    ],
+    "public transit system": [
+        "system",
+        "city",
+        "government",
+        "bus",
+        "metro",
+        "buses",
+        "infrastructure",
+        "economy"
+    ],
+    "classical music artist": [
+        "composer",
+        "musician",
+        "artist",
+        "performer",
+        "actor",
+        "singer",
+        "teacher",
+        "band"
+    ],
+    "railway station": [
+        "village",
+        "school",
+        "station",
+        "town",
+        "location",
+        "locality",
+        "area",
+        "road"
+    ],
+    "instrumentalist": [
+        "vocalist",
+        "composer",
+        "singer",
+        "songwriter",
+        "conductor",
+        "arranger",
+        "producer",
+        "drummer"
+    ],
+    "work": [
+        "life",
+        "love",
+        "pleasure",
+        "work",
+        "money",
+        "death",
+        "home",
+        "play"
+    ],
+    "mountain": [
+        "mountain",
+        "river",
+        "sky",
+        "forest",
+        "city",
+        "land",
+        "lake",
+        "valley"
+    ],
+    "lake": [
+        "lake",
+        "river",
+        "forest",
+        "ocean",
+        "pond",
+        "water",
+        "sky",
+        "town"
+    ],
+    "basketball team": [
+        "football",
+        "school",
+        "club",
+        "volleyball",
+        "team",
+        "sport",
+        "baseball",
+        "game"
+    ],
+    "plant": [
+        "animal",
+        "tree",
+        "flower",
+        "plant",
+        "soil",
+        "life",
+        "bird",
+        "sky"
+    ],
+    "soccer tournament": [
+        "playoffs",
+        "championship",
+        "tournament",
+        "competition",
+        "match",
+        "game",
+        "finals",
+        "cup"
+    ],
+    "anime": [
+        "manga",
+        "movies",
+        "film",
+        "anime",
+        "movie",
+        "comics",
+        "fiction",
+        "cinema"
+    ],
+    "screen writer": [
+        "director",
+        "actor",
+        "producer",
+        "editor",
+        "actress",
+        "writer",
+        "screenwriter",
+        "author"
+    ],
+    "administrative region": [
+        "district",
+        "city",
+        "region",
+        "country",
+        "population",
+        "territory",
+        "county",
+        "province"
+    ],
+    "ethnic group": [
+        "religion",
+        "nationality",
+        "race",
+        "population",
+        "class",
+        "ethnicity",
+        "gender",
+        "community"
+    ],
+    "state": [
+        "city",
+        "country",
+        "nation",
+        "district",
+        "state",
+        "county",
+        "school",
+        "territory"
+    ],
+    "disease": [
+        "death",
+        "health",
+        "life",
+        "pain",
+        "disease",
+        "mortality",
+        "development",
+        "growth"
+    ],
+    "political function": [
+        "ideology",
+        "politics",
+        "function",
+        "organization",
+        "economy",
+        "structure",
+        "religion",
+        "culture"
+    ],
+    "church": [
+        "school",
+        "state",
+        "church",
+        "community",
+        "parish",
+        "family",
+        "society",
+        "city"
+    ],
+    "power station": [
+        "station",
+        "building",
+        "plant",
+        "location",
+        "generator",
+        "structure",
+        "dam",
+        "reservoir"
+    ],
+    "chemical compound": [
+        "process",
+        "chemical",
+        "structure",
+        "substance",
+        "material",
+        "system",
+        "chemistry",
+        "plant"
+    ],
+    "ski area": [
+        "area",
+        "trails",
+        "track",
+        "park",
+        "trail",
+        "hotel",
+        "facilities",
+        "slopes"
+    ],
+    "settlement": [
+        "population",
+        "economy",
+        "settlement",
+        "culture",
+        "development",
+        "government",
+        "society",
+        "trade"
+    ],
+    "military unit": [
+        "organization",
+        "mission",
+        "unit",
+        "army",
+        "rank",
+        "personnel",
+        "school",
+        "service"
+    ],
+    "american football player": [
+        "coach",
+        "athlete",
+        "manager",
+        "player",
+        "actor",
+        "teacher",
+        "driver",
+        "author"
+    ],
+    "sport": [
+        "culture",
+        "music",
+        "art",
+        "religion",
+        "politics",
+        "science",
+        "recreation",
+        "business"
+    ],
+    "vice president": [
+        "president",
+        "ceo",
+        "treasurer",
+        "secretary",
+        "chairman",
+        "provost",
+        "dean",
+        "director"
+    ],
+    "song": [
+        "dance",
+        "music",
+        "lyrics",
+        "song",
+        "melody",
+        "story",
+        "rhythm",
+        "album"
+    ],
+    "military conflict": [
+        "war",
+        "peace",
+        "politics",
+        "terrorism",
+        "warfare",
+        "conflict",
+        "combat",
+        "violence"
+    ],
+    "road": [
+        "traffic",
+        "rail",
+        "track",
+        "highway",
+        "street",
+        "road",
+        "train",
+        "bridge"
+    ],
+    "bank": [
+        "bank",
+        "business",
+        "atm",
+        "trust",
+        "company",
+        "insurance",
+        "school",
+        "corporation"
+    ],
+    "award": [
+        "nomination",
+        "citation",
+        "recognition",
+        "award",
+        "prize",
+        "title",
+        "relegation",
+        "reward"
+    ],
+    "noble": [
+        "noble",
+        "rich",
+        "soldier",
+        "good",
+        "warrior",
+        "military",
+        "king",
+        "knight"
+    ],
+    "monument": [
+        "monument",
+        "cemetery",
+        "memorial",
+        "statue",
+        "church",
+        "museum",
+        "inscription",
+        "park"
+    ],
+    "comedian": [
+        "actor",
+        "writer",
+        "actress",
+        "singer",
+        "musician",
+        "comedian",
+        "artist",
+        "author"
+    ],
+    "volleyball player": [
+        "coach",
+        "volleyball",
+        "player",
+        "athlete",
+        "girl",
+        "actor",
+        "actress",
+        "driver"
+    ],
+    "member of parliament": [
+        "senate",
+        "cabinet",
+        "president",
+        "senator",
+        "government",
+        "governor",
+        "mayor",
+        "mp"
+    ],
+    "agent": [
+        "agent",
+        "target",
+        "manager",
+        "player",
+        "handler",
+        "prey",
+        "person",
+        "victim"
+    ],
+    "album": [
+        "single",
+        "video",
+        "singles",
+        "song",
+        "tour",
+        "title",
+        "album",
+        "ep"
+    ],
+    "senator": [
+        "senator",
+        "congressman",
+        "governor",
+        "representative",
+        "mayor",
+        "house",
+        "president",
+        "judge"
+    ],
+    "golf tournament": [
+        "game",
+        "competition",
+        "tournament",
+        "club",
+        "event",
+        "championship",
+        "match",
+        "race"
+    ],
+    "colour": [
+        "texture",
+        "shape",
+        "pattern",
+        "form",
+        "appearance",
+        "structure",
+        "size",
+        "color"
+    ],
+    "sports league": [
+        "club",
+        "sport",
+        "football",
+        "sports",
+        "league",
+        "competition",
+        "team",
+        "cricket"
+    ],
+    "american football team": [
+        "school",
+        "football",
+        "team",
+        "baseball",
+        "college",
+        "basketball",
+        "club",
+        "navy"
+    ],
+    "language": [
+        "culture",
+        "literature",
+        "society",
+        "religion",
+        "music",
+        "art",
+        "language",
+        "speech"
+    ],
+    "programming language": [
+        "application",
+        "language",
+        "system",
+        "software",
+        "algorithm",
+        "program",
+        "function",
+        "architecture"
+    ],
+    "governor": [
+        "governor",
+        "mayor",
+        "sheriff",
+        "president",
+        "council",
+        "lieutenant",
+        "senator",
+        "legislature"
+    ],
+    "newspaper": [
+        "magazine",
+        "newspaper",
+        "television",
+        "website",
+        "magazines",
+        "internet",
+        "radio",
+        "tv"
+    ],
+    "racing driver": [
+        "driver",
+        "mechanic",
+        "car",
+        "player",
+        "passenger",
+        "coach",
+        "owner",
+        "trainer"
+    ],
+    "person": [
+        "person",
+        "thing",
+        "place",
+        "situation",
+        "object",
+        "body",
+        "action",
+        "character"
+    ],
+    "river": [
+        "river",
+        "lake",
+        "sea",
+        "water",
+        "stream",
+        "sky",
+        "ocean",
+        "forest"
+    ],
+    "organisation": [
+        "management",
+        "structure",
+        "organization",
+        "culture",
+        "personnel",
+        "policy",
+        "function",
+        "training"
+    ],
+    "president": [
+        "ceo",
+        "senate",
+        "president",
+        "council",
+        "secretary",
+        "senator",
+        "chairman",
+        "cabinet"
+    ],
+    "cricketer": [
+        "cricketer",
+        "coach",
+        "player",
+        "footballer",
+        "batsman",
+        "sportsman",
+        "sport",
+        "athlete"
+    ],
+    "publisher": [
+        "editor",
+        "publisher",
+        "author",
+        "artist",
+        "writer",
+        "title",
+        "director",
+        "editors"
+    ],
+    "castle": [
+        "castle",
+        "town",
+        "city",
+        "house",
+        "church",
+        "village",
+        "tower",
+        "mine"
+    ],
+    "museum": [
+        "library",
+        "museum",
+        "school",
+        "gallery",
+        "church",
+        "office",
+        "shop",
+        "park"
+    ],
+    "island": [
+        "island",
+        "sea",
+        "city",
+        "land",
+        "river",
+        "country",
+        "ocean",
+        "ship"
+    ],
+    "music genre": [
+        "style",
+        "genre",
+        "lyrics",
+        "music",
+        "culture",
+        "composition",
+        "song",
+        "theme"
+    ],
+    "artwork": [
+        "design",
+        "layout",
+        "style",
+        "title",
+        "music",
+        "graphics",
+        "text",
+        "writing"
+    ],
+    "saint": [
+        "saint",
+        "martyr",
+        "mother",
+        "virgin",
+        "god",
+        "lady",
+        "father",
+        "child"
+    ],
+    "insect": [
+        "bird",
+        "animal",
+        "bee",
+        "plant",
+        "spider",
+        "insect",
+        "ant",
+        "moth"
+    ],
+    "military person": [
+        "soldier",
+        "person",
+        "civilian",
+        "officer",
+        "man",
+        "army",
+        "citizen",
+        "politician"
+    ],
+    "place": [
+        "time",
+        "person",
+        "people",
+        "purpose",
+        "times",
+        "date",
+        "name",
+        "day"
+    ],
+    "swimmer": [
+        "diver",
+        "swimmer",
+        "athlete",
+        "man",
+        "player",
+        "person",
+        "driver",
+        "surfer"
+    ],
+    "olympic event": [
+        "olympics",
+        "event",
+        "qualification",
+        "competition",
+        "sport",
+        "championship",
+        "games",
+        "class"
+    ],
+    "amateur boxer": [
+        "amateur",
+        "boxer",
+        "wrestler",
+        "athlete",
+        "trainer",
+        "sportsman",
+        "fighter",
+        "professional"
+    ],
+    "musical artist": [
+        "composer",
+        "artist",
+        "band",
+        "performer",
+        "musician",
+        "producer",
+        "actor",
+        "singer"
+    ],
+    "cleric": [
+        "priest",
+        "warrior",
+        "bishop",
+        "cleric",
+        "king",
+        "knight",
+        "teacher",
+        "lord"
+    ],
+    "hollywood cartoon": [
+        "movie",
+        "film",
+        "cartoon",
+        "movies",
+        "animation",
+        "hollywood",
+        "comedy",
+        "television"
+    ],
+    "band": [
+        "band",
+        "choir",
+        "chorus",
+        "song",
+        "personnel",
+        "stage",
+        "orchestra",
+        "music"
+    ],
+    "mayor": [
+        "mayor",
+        "council",
+        "deputy",
+        "sheriff",
+        "councillors",
+        "president",
+        "governor",
+        "director"
+    ],
+    "airline": [
+        "airline",
+        "airport",
+        "train",
+        "airlines",
+        "passenger",
+        "air",
+        "aviation",
+        "ship"
+    ],
+    "office holder": [
+        "position",
+        "holder",
+        "title",
+        "incumbent",
+        "salary",
+        "person",
+        "clerk",
+        "office"
+    ],
+    "hockey team": [
+        "football",
+        "school",
+        "team",
+        "club",
+        "sport",
+        "volleyball",
+        "basketball",
+        "cricket"
+    ],
+    "formula one team": [
+        "driver",
+        "drivers",
+        "team",
+        "formula",
+        "race",
+        "manufacturer",
+        "fia",
+        "car"
+    ],
+    "basketball player": [
+        "coach",
+        "teacher",
+        "athlete",
+        "actor",
+        "player",
+        "student",
+        "girl",
+        "politician"
+    ],
+    "skier": [
+        "skier",
+        "driver",
+        "rider",
+        "athlete",
+        "guide",
+        "pilot",
+        "instructor",
+        "runner"
+    ],
+    "judge": [
+        "jury",
+        "judge",
+        "prosecutor",
+        "lawyer",
+        "justice",
+        "attorney",
+        "court",
+        "courtroom"
+    ],
+    "city": [
+        "city",
+        "town",
+        "country",
+        "state",
+        "county",
+        "school",
+        "district",
+        "municipality"
+    ],
+    "academic journal": [
+        "journal",
+        "magazine",
+        "publication",
+        "website",
+        "newspaper",
+        "yearbook",
+        "editor",
+        "book"
+    ],
+    "artist": [
+        "writer",
+        "artist",
+        "author",
+        "musician",
+        "model",
+        "designer",
+        "composer",
+        "photographer"
+    ],
+    "christian bishop": [
+        "bishop",
+        "priest",
+        "archbishop",
+        "pastor",
+        "minister",
+        "pope",
+        "church",
+        "diocese"
+    ],
+    "film": [
+        "television",
+        "tv",
+        "music",
+        "theater",
+        "theatre",
+        "literature",
+        "video",
+        "art"
+    ],
+    "baseball player": [
+        "coach",
+        "player",
+        "teacher",
+        "manager",
+        "athlete",
+        "pitcher",
+        "actor",
+        "driver"
+    ],
+    "mountain range": [
+        "river",
+        "valley",
+        "forest",
+        "mountains",
+        "city",
+        "landscape",
+        "lake",
+        "country"
+    ],
+    "rugby club": [
+        "football",
+        "athletics",
+        "club",
+        "cricket",
+        "soccer",
+        "rugby",
+        "school",
+        "basketball"
+    ],
+    "radio station": [
+        "school",
+        "station",
+        "website",
+        "newspaper",
+        "music",
+        "program",
+        "people",
+        "radio"
+    ],
+    "television show": [
+        "movie",
+        "film",
+        "show",
+        "movies",
+        "radio",
+        "music",
+        "song",
+        "program"
+    ],
+    "religious building": [
+        "architecture",
+        "culture",
+        "education",
+        "teaching",
+        "school",
+        "religion",
+        "worship",
+        "society"
+    ],
+    "adult actor": [
+        "director",
+        "actor",
+        "actress",
+        "model",
+        "child",
+        "writer",
+        "performer",
+        "singer"
+    ],
+    "race track": [
+        "track",
+        "field",
+        "stadium",
+        "road",
+        "park",
+        "course",
+        "venue",
+        "layout"
+    ],
+    "grape": [
+        "grape",
+        "wine",
+        "grapes",
+        "orange",
+        "apple",
+        "potato",
+        "tomato",
+        "cherry"
+    ],
+    "architect": [
+        "builder",
+        "designer",
+        "architect",
+        "engineer",
+        "artist",
+        "planner",
+        "owner",
+        "author"
+    ],
+    "soccer club": [
+        "club",
+        "school",
+        "football",
+        "team",
+        "university",
+        "college",
+        "academy",
+        "soccer"
+    ],
+    "single": [
+        "double",
+        "single",
+        "family",
+        "married",
+        "dual",
+        "group",
+        "two",
+        "pair"
+    ],
+    "ski resort": [
+        "resort",
+        "park",
+        "hotel",
+        "town",
+        "village",
+        "campground",
+        "spa",
+        "airport"
+    ],
+    "cyclist": [
+        "cyclist",
+        "runner",
+        "rider",
+        "horse",
+        "pedestrian",
+        "driver",
+        "athlete",
+        "man"
+    ],
+    "written work": [
+        "work",
+        "life",
+        "practice",
+        "art",
+        "writing",
+        "performance",
+        "publication",
+        "production"
+    ],
+    "town": [
+        "city",
+        "town",
+        "country",
+        "village",
+        "school",
+        "castle",
+        "county",
+        "community"
+    ],
+    "model": [
+        "model",
+        "problem",
+        "time",
+        "situation",
+        "person",
+        "subject",
+        "class",
+        "function"
+    ],
+    "grand prix": [
+        "tour",
+        "championship",
+        "finals",
+        "masters",
+        "cup",
+        "championships",
+        "final",
+        "open"
+    ],
+    "entomologist": [
+        "##ology",
+        "##ological",
+        "##ologists",
+        "##ologist",
+        "##ologies",
+        "##y",
+        "##optera",
+        "##ops"
+    ],
+    "rugby player": [
+        "coach",
+        "footballer",
+        "athlete",
+        "player",
+        "teacher",
+        "cricketer",
+        "student",
+        "politician"
+    ],
+    "dam": [
+        "reservoir",
+        "river",
+        "dam",
+        "lake",
+        "lock",
+        "powerhouse",
+        "bridge",
+        "pond"
+    ],
+    "television station": [
+        "radio",
+        "station",
+        "newspaper",
+        "school",
+        "network",
+        "transmitter",
+        "website",
+        "channel"
+    ],
+    "musical": [
+        "art",
+        "social",
+        "artistic",
+        "musical",
+        "aesthetic",
+        "visual",
+        "dance",
+        "literary"
+    ],
+    "horse race": [
+        "race",
+        "football",
+        "horse",
+        "rodeo",
+        "racing",
+        "riding",
+        "wrestling",
+        "sport"
+    ],
+    "archeologist": [
+        "archaeologist",
+        "artifact"
+    ],
+    "philosopher": [
+        "scientist",
+        "philosopher",
+        "poet",
+        "writer",
+        "theologian",
+        "mathematician",
+        "psychologist",
+        "teacher"
+    ],
+    "boxer": [
+        "boxer",
+        "fighter",
+        "wrestler",
+        "boxers",
+        "coach",
+        "trainer",
+        "referee",
+        "man"
+    ],
+    "skyscraper": [
+        "skyscraper",
+        "city",
+        "hotel",
+        "park",
+        "building",
+        "street",
+        "town",
+        "downtown"
+    ],
+    "musical work": [
+        "performance",
+        "life",
+        "music",
+        "art",
+        "culture",
+        "practice",
+        "education",
+        "composition"
+    ],
+    "protected area": [
+        "park",
+        "reserve",
+        "forest",
+        "status",
+        "environment",
+        "conservation",
+        "area",
+        "landscape"
+    ],
+    "manga": [
+        "anime",
+        "tv",
+        "television",
+        "animation",
+        "manga",
+        "comics",
+        "movies",
+        "film"
+    ],
+    "writer": [
+        "artist",
+        "director",
+        "actor",
+        "editor",
+        "author",
+        "poet",
+        "model",
+        "publisher"
+    ],
+    "stadium": [
+        "stadium",
+        "venue",
+        "field",
+        "pitch",
+        "facilities",
+        "schedule",
+        "track",
+        "arena"
+    ],
+    "back scene": [
+        "ending",
+        "background",
+        "plot",
+        "camera",
+        "story",
+        "dialogue",
+        "end",
+        "script"
+    ],
+    "cardinal": [
+        "bishop",
+        "cardinal",
+        "pope",
+        "divine",
+        "archbishop",
+        "canon",
+        "priest",
+        "metropolitan"
+    ]
+}
